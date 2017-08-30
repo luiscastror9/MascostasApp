@@ -69,7 +69,24 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
     setTimeout(callback, duration)
     return this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+    //jfsdklfsdfsdklhfsdb
 
   $(function () {
     $.support.transition = transitionEnd()
