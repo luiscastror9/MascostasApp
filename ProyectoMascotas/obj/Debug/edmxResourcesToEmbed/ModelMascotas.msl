@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mascotasModelStoreContainer" CdmEntityContainer="mascotasEntities1">
+    <EntitySetMapping Name="Mascotas">
+      <EntityTypeMapping TypeName="mascotasModel.Mascotas">
+        <MappingFragment StoreEntitySet="Mascotas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="animal" ColumnName="animal" />
+          <ScalarProperty Name="raza" ColumnName="raza" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="vacunas" ColumnName="vacunas" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="perdidoadopcion" ColumnName="perdidoadopcion" />
+          <ScalarProperty Name="encontradoadoptado" ColumnName="encontradoadoptado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipodeUsuario">
+      <EntityTypeMapping TypeName="mascotasModel.TipodeUsuario">
+        <MappingFragment StoreEntitySet="TipodeUsuario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="mascotasModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="empresa" ColumnName="empresa" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="localidad" ColumnName="localidad" />
+          <ScalarProperty Name="fechadenacimiento" ColumnName="fechadenacimiento" />
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="tipodeusuario" ColumnName="tipodeusuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

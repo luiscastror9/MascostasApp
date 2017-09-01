@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mascotasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Mascotas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="animal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="raza" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ubicacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sexo" Type="Boolean" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="vacunas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="edad" Type="Int32" />
+    <Property Name="perdidoadopcion" Type="Boolean" />
+    <Property Name="encontradoadoptado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TipodeUsuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empresa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usuario1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="localidad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fechadenacimiento" Type="DateTime" Precision="0" />
+    <Property Name="dni" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tipodeusuario" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="mascotasEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Mascotas" EntityType="Self.Mascotas" />
+    <EntitySet Name="TipodeUsuario" EntityType="Self.TipodeUsuario" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mascotasModelStoreContainer" CdmEntityContainer="mascotasEntities">
+    <EntitySetMapping Name="Mascotas">
+      <EntityTypeMapping TypeName="mascotasModel.Mascotas">
+        <MappingFragment StoreEntitySet="Mascotas">
+          <ScalarProperty Name="encontradoadoptado" ColumnName="encontradoadoptado" />
+          <ScalarProperty Name="perdidoadopcion" ColumnName="perdidoadopcion" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="vacunas" ColumnName="vacunas" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+          <ScalarProperty Name="raza" ColumnName="raza" />
+          <ScalarProperty Name="animal" ColumnName="animal" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipodeUsuario">
+      <EntityTypeMapping TypeName="mascotasModel.TipodeUsuario">
+        <MappingFragment StoreEntitySet="TipodeUsuario">
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="mascotasModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="tipodeusuario" ColumnName="tipodeusuario" />
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="fechadenacimiento" ColumnName="fechadenacimiento" />
+          <ScalarProperty Name="localidad" ColumnName="localidad" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="empresa" ColumnName="empresa" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
