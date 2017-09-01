@@ -26,7 +26,7 @@ namespace ProyectoMascotas
         }
     
         public virtual DbSet<Mascotas> Mascotas { get; set; }
-        public virtual DbSet<TipodeUsuario> TipodeUsuario { get; set; }
+        public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
     }
 }

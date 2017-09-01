@@ -151,3 +151,8 @@ C:\Users\luis.castro\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\Syste
 C:\Users\luis.castro\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache
 C:\Users\luis.castro\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
 C:\Users\luis.castro\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
+C:\Users\comunidadit\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\EntityFramework.dll
+C:\Users\comunidadit\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\EntityFramework.SqlServer.dll
+C:\Users\comunidadit\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\WebActivatorEx.dll
+C:\Users\comunidadit\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\EntityFramework.xml
+C:\Users\comunidadit\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\EntityFramework.SqlServer.xml

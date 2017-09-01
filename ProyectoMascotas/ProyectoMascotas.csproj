@@ -155,6 +155,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MascotasController.cs" />
+    <Compile Include="Controllers\StatusController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -178,7 +180,7 @@
       <DependentUpon>ModelMascotas.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TipodeUsuario.cs">
+    <Compile Include="Status.cs">
       <DependentUpon>ModelMascotas.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">
@@ -259,6 +261,21 @@
     <Content Include="Views\Usuarios\Details.cshtml" />
     <Content Include="Views\Usuarios\Edit.cshtml" />
     <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\TipodeUsuarios\Create.cshtml" />
+    <Content Include="Views\TipodeUsuarios\Delete.cshtml" />
+    <Content Include="Views\TipodeUsuarios\Details.cshtml" />
+    <Content Include="Views\TipodeUsuarios\Edit.cshtml" />
+    <Content Include="Views\TipodeUsuarios\Index.cshtml" />
+    <Content Include="Views\Mascotas\Create.cshtml" />
+    <Content Include="Views\Mascotas\Delete.cshtml" />
+    <Content Include="Views\Mascotas\Details.cshtml" />
+    <Content Include="Views\Mascotas\Edit.cshtml" />
+    <Content Include="Views\Mascotas\Index.cshtml" />
+    <Content Include="Views\Status\Create.cshtml" />
+    <Content Include="Views\Status\Delete.cshtml" />
+    <Content Include="Views\Status\Details.cshtml" />
+    <Content Include="Views\Status\Edit.cshtml" />
+    <Content Include="Views\Status\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

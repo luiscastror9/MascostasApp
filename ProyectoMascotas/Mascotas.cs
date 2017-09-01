@@ -14,15 +14,14 @@ namespace ProyectoMascotas
     
     public partial class Mascotas
     {
-        public int Id { get; set; }
-        public string animal { get; set; }
-        public string raza { get; set; }
-        public string ubicacion { get; set; }
-        public Nullable<bool> sexo { get; set; }
-        public string descripcion { get; set; }
-        public string vacunas { get; set; }
-        public Nullable<int> edad { get; set; }
-        public Nullable<bool> perdidoadopcion { get; set; }
-        public Nullable<bool> encontradoadoptado { get; set; }
+        public int ID { get; set; }
+        public string Animal { get; set; }
+        public string Raza { get; set; }
+        public string Ubicacion { get; set; }
+        public Nullable<bool> Sexo { get; set; }
+        public string Descripcion { get; set; }
+        public string Vacunas { get; set; }
+        public Nullable<int> Edad { get; set; }
+        public int Status { get; set; }
     }
 }
