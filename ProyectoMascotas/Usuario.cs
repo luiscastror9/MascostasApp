@@ -14,15 +14,15 @@ namespace ProyectoMascotas
     
     public partial class Usuario
     {
-        public int Id { get; set; }
-        public string empresa { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public string usuario1 { get; set; }
-        public string pass { get; set; }
-        public string localidad { get; set; }
-        public Nullable<System.DateTime> fechadenacimiento { get; set; }
-        public string dni { get; set; }
-        public string tipodeusuario { get; set; }
+        public int ID { get; set; }
+        public string Empresa { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Nombre_de_Usuario { get; set; }
+        public string Pass { get; set; }
+        public string Localidad { get; set; }
+        public Nullable<System.DateTime> Fecha_de_nacimiento { get; set; }
+        public string DNI { get; set; }
+        public string Tipo_de_usuario { get; set; }
     }
 }

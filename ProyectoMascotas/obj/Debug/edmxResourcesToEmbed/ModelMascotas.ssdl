@@ -2,44 +2,43 @@
 <Schema Namespace="mascotasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="Mascotas">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="ID" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
-    <Property Name="animal" Type="nvarchar" MaxLength="50" />
-    <Property Name="raza" Type="nvarchar" MaxLength="50" />
-    <Property Name="ubicacion" Type="nvarchar" MaxLength="50" />
-    <Property Name="sexo" Type="bit" />
-    <Property Name="descripcion" Type="nvarchar" MaxLength="50" />
-    <Property Name="vacunas" Type="nvarchar" MaxLength="50" />
-    <Property Name="edad" Type="int" />
-    <Property Name="perdidoadopcion" Type="bit" />
-    <Property Name="encontradoadoptado" Type="bit" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Animal" Type="nvarchar" MaxLength="50" />
+    <Property Name="Raza" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ubicacion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sexo" Type="bit" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Vacunas" Type="nvarchar" MaxLength="50" />
+    <Property Name="Edad" Type="int" />
+    <Property Name="Status" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="TipodeUsuario">
+  <EntityType Name="Status">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="ID" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
-    <Property Name="tipo" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="NOMBREDESTATUS" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Usuario">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="ID" />
     </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="empresa" Type="nvarchar" MaxLength="50" />
-    <Property Name="nombre" Type="nvarchar" MaxLength="50" />
-    <Property Name="apellido" Type="nvarchar" MaxLength="50" />
-    <Property Name="usuario" Type="nvarchar" MaxLength="50" />
-    <Property Name="pass" Type="nvarchar" MaxLength="50" />
-    <Property Name="localidad" Type="nvarchar" MaxLength="50" />
-    <Property Name="fechadenacimiento" Type="date" />
-    <Property Name="dni" Type="nvarchar" MaxLength="50" />
-    <Property Name="tipodeusuario" Type="nchar" MaxLength="10" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Empresa" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Apellido" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nombre de Usuario" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pass" Type="nvarchar" MaxLength="50" />
+    <Property Name="Localidad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fecha de nacimiento" Type="date" />
+    <Property Name="DNI" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tipo de usuario" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityContainer Name="mascotasModelStoreContainer">
     <EntitySet Name="Mascotas" EntityType="Self.Mascotas" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="TipodeUsuario" EntityType="Self.TipodeUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>
