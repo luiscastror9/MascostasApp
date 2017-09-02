@@ -19,7 +19,7 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" Nullable="false" />
-    <Property Name="NOMBREDESTATUS" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NombreDESTATUS" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Usuario">
     <Key>

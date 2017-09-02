@@ -626,7 +626,7 @@ window.Modernizr = (function( window, document, undefined ) {
     };
 
 
-    // Note, Android < 4 will pass this test, but can only animate
+    // Note, Android < 4 will Pass this test, but can only animate
     //   a single property at a time
     //   daneden.me/2011/12/putting-up-with-androids-bullshit/
     tests['cssanimations'] = function() {
@@ -677,7 +677,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
         var ret = !!testPropsAll('perspective');
 
-        // Webkit's 3D transforms are passed off to the browser's own graphics renderer.
+        // Webkit's 3D transforms are Passed off to the browser's own graphics renderer.
         //   It works fine in Safari on Leopard and Snow Leopard, but not in Chrome in
         //   some conditions. As a result, Webkit typically recognizes the syntax but
         //   will sometimes throw a false positive, thus we must do a more thorough check:
@@ -867,7 +867,7 @@ window.Modernizr = (function( window, document, undefined ) {
     };
 
     /*>>webforms*/
-    // input features and input types go directly onto the ret object, bypassing the tests loop.
+    // input features and input types go directly onto the ret object, byPassing the tests loop.
     // Hold this guy to execute in a moment.
     function webforms() {
         /*>>input*/
@@ -932,7 +932,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
                     } else if ( /^(search|tel)$/.test(inputElemType) ){
                       // Spec doesn't define any special parsing or detectable UI
-                      //   behaviors so we pass these through as true
+                      //   behaviors so we Pass these through as true
 
                       // Interestingly, opera fails the earlier test, so it doesn't
                       //  even make it here.
@@ -1376,7 +1376,7 @@ window.Modernizr = (function( window, document, undefined ) {
     // Modernizr.prefixed() returns the prefixed or nonprefixed property name variant of your input
     // Modernizr.prefixed('boxSizing') // 'MozBoxSizing'
 
-    // Properties must be passed as dom-style camelcase, rather than `box-sizing` hypentated style.
+    // Properties must be Passed as dom-style camelcase, rather than `box-sizing` hypentated style.
     // Return values will also be the camelCase variant, if you need to translate that to hypenated style use:
     //
     //     str.replace(/([A-Z])/g, function(str,m1){ return '-' + m1.toLowerCase(); }).replace(/^ms-/,'-ms-');
