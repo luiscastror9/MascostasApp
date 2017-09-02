@@ -135,7 +135,7 @@
 
         if (!result) {
             result = {
-                options: {  // options structure passed to jQuery Validate's validate() method
+                options: {  // options structure Passed to jQuery Validate's validate() method
                     errorClass: defaultOptions.errorClass || "input-validation-error",
                     errorElement: defaultOptions.errorElement || "span",
                     errorPlacement: function () {
@@ -411,7 +411,7 @@
 
         setValidationValues(options, "remote", value);
     });
-    adapters.add("password", ["min", "nonalphamin", "regex"], function (options) {
+    adapters.add("Password", ["min", "nonalphamin", "regex"], function (options) {
         if (options.params.min) {
             setValidationValues(options, "minlength", options.params.min);
         }

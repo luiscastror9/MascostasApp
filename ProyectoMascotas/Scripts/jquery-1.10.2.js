@@ -345,7 +345,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 		target = {};
 	}
 
-	// extend jQuery itself if only one argument is passed
+	// extend jQuery itself if only one argument is Passed
 	if ( length === i ) {
 		target = this;
 		--i;
@@ -486,7 +486,7 @@ jQuery.extend({
 
 		// Must be an Object.
 		// Because of IE, we also have to check the presence of the constructor property.
-		// Make sure that DOM nodes and window objects don't pass through, as well
+		// Make sure that DOM nodes and window objects don't Pass through, as well
 		if ( !obj || jQuery.type(obj) !== "object" || obj.nodeType || jQuery.isWindow( obj ) ) {
 			return false;
 		}
@@ -532,7 +532,7 @@ jQuery.extend({
 
 	// data: string of html
 	// context (optional): If specified, the fragment will be created in this context, defaults to document
-	// keepScripts (optional): If true, will include scripts passed in the html string
+	// keepScripts (optional): If true, will include scripts Passed in the html string
 	parseHTML: function( data, context, keepScripts ) {
 		if ( !data || typeof data !== "string" ) {
 			return null;
@@ -771,7 +771,7 @@ jQuery.extend({
 		inv = !!inv;
 
 		// Go through the array, only saving the items
-		// that pass the validator function
+		// that Pass the validator function
 		for ( ; i < length; i++ ) {
 			retVal = !!callback( elems[ i ], i );
 			if ( inv !== retVal ) {
@@ -1599,7 +1599,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	// qSa(:focus) reports false when true (Chrome 21)
 	// We allow this because of a bug in IE8/9 that throws an error
 	// whenever `document.activeElement` is accessed on an iframe
-	// So, we allow :focus to pass through QSA all the time to avoid the IE error
+	// So, we allow :focus to Pass through QSA all the time to avoid the IE error
 	// See http://bugs.jquery.com/ticket/13378
 	rbuggyQSA = [];
 
@@ -2198,7 +2198,7 @@ Expr = Sizzle.selectors = {
 	pseudos: {
 		// Potentially complex pseudos
 		"not": markFunction(function( selector ) {
-			// Trim the selector passed to compile
+			// Trim the selector Passed to compile
 			// to avoid treating leading and trailing
 			// spaces as combinators
 			var input = [],
@@ -2397,7 +2397,7 @@ Expr = Sizzle.selectors = {
 Expr.pseudos["nth"] = Expr.pseudos["eq"];
 
 // Add button/input type pseudos
-for ( i in { radio: true, checkbox: true, file: true, password: true, image: true } ) {
+for ( i in { radio: true, checkbox: true, file: true, Password: true, image: true } ) {
 	Expr.pseudos[ i ] = createInputPseudo( i );
 }
 for ( i in { submit: true, reset: true } ) {
@@ -2742,7 +2742,7 @@ function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
 				cachedruns = matcherCachedRuns;
 			}
 
-			// Add elements passing elementMatchers directly to results
+			// Add elements Passing elementMatchers directly to results
 			// Keep `i` a string if there are no elements so `matchedCount` will be "00" below
 			for ( ; (elem = elems[i]) != null; i++ ) {
 				if ( byElement && elem ) {
@@ -2926,7 +2926,7 @@ function select( selector, context, results, seed ) {
 support.sortStable = expando.split("").sort( sortOrder ).join("") === expando;
 
 // Support: Chrome<14
-// Always assume duplicates if they aren't passed to the comparison function
+// Always assume duplicates if they aren't Passed to the comparison function
 support.detectDuplicates = hasDuplicate;
 
 // Initialize against the default document
@@ -3621,7 +3621,7 @@ function internalData( elem, name, data, pvt /* Internal Use Only */ ){
 		cache[ id ] = isNode ? {} : { toJSON: jQuery.noop };
 	}
 
-	// An object can be passed to jQuery.data instead of a key/value pair; this gets
+	// An object can be Passed to jQuery.data instead of a key/value pair; this gets
 	// shallow copied over onto the existing cache
 	if ( typeof name === "object" || typeof name === "function" ) {
 		if ( pvt ) {
@@ -4207,7 +4207,7 @@ jQuery.fn.extend({
 					jQuery._data( this, "__className__", this.className );
 				}
 
-				// If the element has a class name or if we're passed "false",
+				// If the element has a class name or if we're Passed "false",
 				// then remove the whole classname (if there was one, the above saved it).
 				// Otherwise bring back whatever was previously saved (if anything),
 				// falling back to the empty string if nothing was stored.
@@ -4756,7 +4756,7 @@ jQuery.event = {
 			return;
 		}
 
-		// Caller can pass in an object of custom data in lieu of the handler
+		// Caller can Pass in an object of custom data in lieu of the handler
 		if ( handler.handler ) {
 			handleObjIn = handler;
 			handler = handleObjIn.handler;
@@ -4806,7 +4806,7 @@ jQuery.event = {
 			// Update special based on newly reset type
 			special = jQuery.event.special[ type ] || {};
 
-			// handleObj is passed to all event handlers
+			// handleObj is Passed to all event handlers
 			handleObj = jQuery.extend({
 				type: type,
 				origType: origType,
@@ -4959,7 +4959,7 @@ jQuery.event = {
 		}
 		ontype = type.indexOf(":") < 0 && "on" + type;
 
-		// Caller can pass in a jQuery.Event object, Object, or just an event type string
+		// Caller can Pass in a jQuery.Event object, Object, or just an event type string
 		event = event[ jQuery.expando ] ?
 			event :
 			new jQuery.Event( type, typeof event === "object" && event );
@@ -5800,7 +5800,7 @@ jQuery.fn.extend({
 				if ( cur.nodeType < 11 && (pos ?
 					pos.index(cur) > -1 :
 
-					// Don't pass non-elements to Sizzle
+					// Don't Pass non-elements to Sizzle
 					cur.nodeType === 1 &&
 						jQuery.find.matchesSelector(cur, selectors)) ) {
 
@@ -7025,7 +7025,7 @@ jQuery.extend({
 				return;
 			}
 
-			// If a number was passed in, add 'px' to the (except for certain CSS properties)
+			// If a number was Passed in, add 'px' to the (except for certain CSS properties)
 			if ( type === "number" && !jQuery.cssNumber[ origName ] ) {
 				value += "px";
 			}
@@ -7519,7 +7519,7 @@ jQuery.param = function( a, traditional ) {
 		traditional = jQuery.ajaxSettings && jQuery.ajaxSettings.traditional;
 	}
 
-	// If an array was passed in, assume that it is an array of form elements.
+	// If an array was Passed in, assume that it is an array of form elements.
 	if ( jQuery.isArray( a ) || ( a.jquery && !jQuery.isPlainObject( a ) ) ) {
 		// Serialize the form elements
 		jQuery.each( a, function() {
@@ -7814,7 +7814,7 @@ jQuery.extend({
 		data: null,
 		dataType: null,
 		username: null,
-		password: null,
+		Password: null,
 		cache: null,
 		throws: false,
 		traditional: false,
@@ -8681,7 +8681,7 @@ if ( xhrSupported ) {
 					// Open the socket
 					// Passing null username, generates a login popup on Opera (#2865)
 					if ( s.username ) {
-						xhr.open( s.type, s.url, s.async, s.username, s.password );
+						xhr.open( s.type, s.url, s.async, s.username, s.Password );
 					} else {
 						xhr.open( s.type, s.url, s.async );
 					}
@@ -9010,7 +9010,7 @@ function Animation( elem, properties, options ) {
 function propFilter( props, specialEasing ) {
 	var index, name, easing, value, hooks;
 
-	// camelCase, specialEasing and expand cssHook pass
+	// camelCase, specialEasing and expand cssHook Pass
 	for ( index in props ) {
 		name = jQuery.camelCase( index );
 		easing = specialEasing[ name ];
@@ -9109,7 +9109,7 @@ function defaultPrefilter( elem, props, opts ) {
 		});
 	}
 
-	// height/width overflow pass
+	// height/width overflow Pass
 	if ( elem.nodeType === 1 && ( "height" in props || "width" in props ) ) {
 		// Make sure that nothing sneaks out
 		// Record all 3 overflow attributes because IE does not
@@ -9145,7 +9145,7 @@ function defaultPrefilter( elem, props, opts ) {
 	}
 
 
-	// show/hide pass
+	// show/hide Pass
 	for ( prop in props ) {
 		value = props[ prop ];
 		if ( rfxtypes.exec( value ) ) {
@@ -9260,7 +9260,7 @@ Tween.propHooks = {
 				return tween.elem[ tween.prop ];
 			}
 
-			// passing an empty string as a 3rd parameter to .css will automatically
+			// Passing an empty string as a 3rd parameter to .css will automatically
 			// attempt a parseFloat and fallback to a string if the parse fails
 			// so, simple values such as "10px" are parsed to Float.
 			// complex values such as "rotate(1rad)" are returned as is.

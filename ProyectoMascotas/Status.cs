@@ -15,6 +15,6 @@ namespace ProyectoMascotas
     public partial class Status
     {
         public int ID { get; set; }
-        public string NOMBREDESTATUS { get; set; }
+        public string NombreDESTATUS { get; set; }
     }
 }

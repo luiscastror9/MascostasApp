@@ -46,7 +46,7 @@ namespace ProyectoMascotas.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,empresa,nombre,apellido,usuario1,pass,localidad,fechadenacimiento,dni,tipodeusuario")] Usuario usuario)
+        public ActionResult Create([Bind(Include = "Id,Empresa,Nombre,Apellido,Tipo_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,tipodeusuario")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ProyectoMascotas.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,empresa,nombre,apellido,usuario1,pass,localidad,fechadenacimiento,dni,tipodeusuario")] Usuario usuario)
+        public ActionResult Edit([Bind(Include = "Id,Empresa,Nombre,Apellido,Tipo_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,tipodeusuario")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {

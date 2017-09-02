@@ -19,7 +19,7 @@
     <EntitySetMapping Name="Status">
       <EntityTypeMapping TypeName="mascotasModel.Status">
         <MappingFragment StoreEntitySet="Status">
-          <ScalarProperty Name="NOMBREDESTATUS" ColumnName="NOMBREDESTATUS" />
+          <ScalarProperty Name="NombreDESTATUS" ColumnName="NombreDESTATUS" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
