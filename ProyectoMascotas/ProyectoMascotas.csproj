@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -266,16 +267,16 @@
     <Content Include="Views\TipodeUsuarios\Details.cshtml" />
     <Content Include="Views\TipodeUsuarios\Edit.cshtml" />
     <Content Include="Views\TipodeUsuarios\Index.cshtml" />
-    <Content Include="Views\Mascotas\Create.cshtml" />
-    <Content Include="Views\Mascotas\Delete.cshtml" />
-    <Content Include="Views\Mascotas\Details.cshtml" />
-    <Content Include="Views\Mascotas\Edit.cshtml" />
-    <Content Include="Views\Mascotas\Index.cshtml" />
     <Content Include="Views\Status\Create.cshtml" />
     <Content Include="Views\Status\Delete.cshtml" />
     <Content Include="Views\Status\Details.cshtml" />
     <Content Include="Views\Status\Edit.cshtml" />
     <Content Include="Views\Status\Index.cshtml" />
+    <Content Include="Views\Mascotas\Create.cshtml" />
+    <Content Include="Views\Mascotas\Delete.cshtml" />
+    <Content Include="Views\Mascotas\Details.cshtml" />
+    <Content Include="Views\Mascotas\Edit.cshtml" />
+    <Content Include="Views\Mascotas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
