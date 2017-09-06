@@ -10,15 +10,8 @@ namespace ProyectoMascotas.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Titulo = "hay 3 cocodrilos";
+            ViewBag.Titulo = "AppMascotas";
             return View();
-        }
-       [HttpPost]
-        public ActionResult Index2()
-        {
-            ViewBag.Titulo = "hay 3 caimanes ";
-//            return View("Index");
-            return Content("kk");
         }
         public ActionResult About()
         {

@@ -10,6 +10,8 @@ using ProyectoMascotas;
 
 namespace ProyectoMascotas.Controllers
 {
+
+
     public class UsuariosController : Controller
     {
         private mascotasEntities1 db = new mascotasEntities1();
@@ -19,6 +21,8 @@ namespace ProyectoMascotas.Controllers
         {
             return View(db.Usuario.ToList());
         }
+
+        
 
         // GET: Usuarios/Details/5
         public ActionResult Details(int? id)
@@ -46,7 +50,7 @@ namespace ProyectoMascotas.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Empresa,Nombre,Apellido,Tipo_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,tipodeusuario")] Usuario usuario)
+        public ActionResult Create([Bind(Include = "Id,Empresa,Nombre,Apellido,Nombre_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,Tipo_de_usuario")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +82,7 @@ namespace ProyectoMascotas.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Empresa,Nombre,Apellido,Tipo_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,tipodeusuario")] Usuario usuario)
+        public ActionResult Edit([Bind(Include = "Id,Empresa,Nombre,Apellido,Nombre_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,Tipo_de_usuario")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -123,5 +127,8 @@ namespace ProyectoMascotas.Controllers
             }
             base.Dispose(disposing);
         }
+
+
     }
+
 }

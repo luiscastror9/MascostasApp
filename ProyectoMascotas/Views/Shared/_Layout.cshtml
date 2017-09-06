@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Adpta un cocodrilo</title>
+    <title>@ViewBag.Title - AppMascotas</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Adopta un cocodrilo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("AppMascotas", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -25,6 +25,8 @@
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Usuarios", "Index", "Usuarios")</li>
+                    <li>@Html.ActionLink("Mascotas", "Index", "Mascotas")</li>
+                    <li>@Html.ActionLink("Status", "Index", "Status")</li>
 
                 </ul>
             </div>
@@ -34,7 +36,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Adopta un Coccodrilo</p>
+            <p>&copy; @DateTime.Now.Year - AppMascotas</p>
         </footer>
     </div>
 

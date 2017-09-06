@@ -42,11 +42,11 @@ namespace ProyectoMascotas.Controllers
         }
 
         // POST: Mascotas/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,animal,raza,ubicacion,sexo,descripcion,vacunas,edad,perdidoadopcion,encontradoadoptado")] Mascotas mascotas)
+        public ActionResult Create([Bind(Include = "ID,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")] Mascotas mascotas)
         {
             if (ModelState.IsValid)
             {
@@ -74,11 +74,11 @@ namespace ProyectoMascotas.Controllers
         }
 
         // POST: Mascotas/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,animal,raza,ubicacion,sexo,descripcion,vacunas,edad,perdidoadopcion,encontradoadoptado")] Mascotas mascotas)
+        public ActionResult Edit([Bind(Include = "ID,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")] Mascotas mascotas)
         {
             if (ModelState.IsValid)
             {
