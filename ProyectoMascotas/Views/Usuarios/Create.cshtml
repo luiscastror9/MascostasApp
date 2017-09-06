@@ -95,7 +95,7 @@ Fecha de Nacimiento (AAAA-MM-DD)
         </div>
 
             <div id="dni" class="form-group" style="display:none">
-                DNI
+                DNI/CUIT
                 <br /><br />
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.DNI, new { htmlAttributes = new { @class = "form-control" } })
@@ -103,20 +103,11 @@ Fecha de Nacimiento (AAAA-MM-DD)
                 </div>
             </div>
 
-        <div id="cuit" class="form-group" style="display:none">
-            CUIT
-            <br /><br />
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DNI, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.DNI, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
             <div class="form-group" style="display:none">
 Tipo de Usuario
                 <br /><br />
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Tipo_de_usuario, new { htmlAttributes = new { @class = "form-control" } })
+                <div  class="col-md-10">
+                    @Html.EditorFor(model => model.Tipo_de_usuario, new { htmlAttributes = new { @class = "form-control " } })
                     @Html.ValidationMessageFor(model => model.Tipo_de_usuario, "", new { @class = "text-danger" })
                 </div>
             </div>
@@ -143,7 +134,6 @@ Tipo de Usuario
         if (formulaire.TIPO.selectedIndex == 1)
         {
             $('#razonso').hide();
-            $('#cuit').hide();
             $('#nace').hide();
             $('#nombrei').css('display', 'block');
             $('#apellidoi').css('display', 'block');
@@ -152,18 +142,19 @@ Tipo de Usuario
             $('#nombredeu').css('display', 'block');
             $('#contradeu').css('display', 'block');
             $('#localidadu').css('display', 'block');
+            $('#Tipo_de_usuario').attr('value', '1');
         }else{
         if (formulaire.TIPO.selectedIndex == 2) {
             $('#nombrei').hide();
             $('#apellidoi').hide();
-            $('#dni').hide();
             $('#naci').hide();
             $('#razonso').css('display', 'block');
-            $('#cuit').css('display', 'block');
+            $('#dni').css('display', 'block');
             $('#nace').css('display', 'block');
             $('#nombredeu').css('display', 'block');
             $('#contradeu').css('display', 'block');
             $('#localidadu').css('display', 'block');
+            $('#Tipo_de_usuario').attr('value', '2');
         } else {
             if (formulaire.TIPO.selectedIndex == 0) {
                 $('#nombrei').hide();
