@@ -84,7 +84,16 @@
             @Html.DisplayFor(model => model.Tipo_de_usuario)
         </dd>
 
+        <dt>
+            Email
+        </dt>
+            
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
     </dl>
+
 
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
