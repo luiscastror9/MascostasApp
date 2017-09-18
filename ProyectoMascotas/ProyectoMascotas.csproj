@@ -263,11 +263,6 @@
     <Content Include="Views\Usuarios\Details.cshtml" />
     <Content Include="Views\Usuarios\Edit.cshtml" />
     <Content Include="Views\Usuarios\Index.cshtml" />
-    <Content Include="Views\TipodeUsuarios\Create.cshtml" />
-    <Content Include="Views\TipodeUsuarios\Delete.cshtml" />
-    <Content Include="Views\TipodeUsuarios\Details.cshtml" />
-    <Content Include="Views\TipodeUsuarios\Edit.cshtml" />
-    <Content Include="Views\TipodeUsuarios\Index.cshtml" />
     <Content Include="Views\Status\Create.cshtml" />
     <Content Include="Views\Status\Delete.cshtml" />
     <Content Include="Views\Status\Details.cshtml" />
@@ -278,8 +273,9 @@
     <Content Include="Views\Mascotas\Details.cshtml" />
     <Content Include="Views\Mascotas\Edit.cshtml" />
     <Content Include="Views\Mascotas\Index.cshtml" />
+    <Content Include="Views\Usuarios\Validar.cshtml" />
+    <Content Include="Views\Usuarios\Nohallado.cshtml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
