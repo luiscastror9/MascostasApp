@@ -7,17 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+
 namespace ProyectoMascotas
 {
     using System;
     using System.Collections.Generic;
     
+    [System.ComponentModel.DataAnnotations.MetadataType(typeof(Models.ValidarUsuario))]
     public partial class Usuario
     {
         public int ID { get; set; }
         public string Empresa { get; set; }
         public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public string Apellido { get; set; }        
         public string Nombre_de_Usuario { get; set; }
         public string Pass { get; set; }
         public string Localidad { get; set; }

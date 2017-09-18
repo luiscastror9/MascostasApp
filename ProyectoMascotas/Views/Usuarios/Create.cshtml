@@ -20,7 +20,7 @@
         </select>
         <br /><br />
 
- <div class="container bg-danger ">
+
  <form>
 
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -40,7 +40,7 @@
 <div id="nombrei" class="form-group" style="display:none">
 <div class="row">
     <div class="col-xs-offset-1">
-        <label>Nombre</label>
+        <label>Nombre:</label>
     </div>
     <div class="col-xs-offset-2">
          @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control",@placeholder="Escriba su nombre " } })
@@ -76,7 +76,7 @@
 <div id="contradeu" class="form-group" style="display:none">
 <div class="row">
     <div class="col-xs-offset-1">
-        <label>Contraseña</label>
+        <label>Contraseña:</label>
     </div>
     <div class="col-xs-offset-2">
         @Html.EditorFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control", @placeholder ="Escriba su contraseña" } })
@@ -88,10 +88,10 @@
 <div id="localidadu" class="form-group" style="display:none">
 <div class="row">
     <div class="col-xs-offset-1">
-        <label>Localidad</label>
+        <label>Localidad:</label>
     </div>
     <div class="col-xs-offset-2">
-        @Html.EditorFor(model => model.Localidad, new { htmlAttributes = new { @class = "form-control", @placeholder ="escriba su localidad" } })
+        @Html.EditorFor(model => model.Localidad, new { htmlAttributes = new { @class = "form-control", @placeholder ="Escriba su localidad" } })
     </div>
 @Html.ValidationMessageFor(model => model.Localidad, "", new { @class = "text-danger" })
 </div>
@@ -101,10 +101,10 @@
 <div id="naci" class="form-group" style="display:none">
 <div class="row">
     <div id="mfn" class="col-xs-offset-1" style="display:none">
-        <label>Fecha de nacimiento (AAAA/MM/DD) :</label><!--agregar en el input AAAA/MM/DD-->
+        <label>Fecha de nacimiento (AAAA/MM/DD):</label><!--agregar en el input AAAA/MM/DD-->
     </div>
     <div id="mfi" class="col-xs-offset-1" style="display:none">
-        <label>Fecha de inscripcion(AAAA/MM/DD) :</label><!--agregar en el input AAAA/MM/DD-->
+        <label>Fecha de inscripcion (AAAA/MM/DD):</label><!--agregar en el input AAAA/MM/DD-->
     </div>
     <div class="col-xs-offset-2">
         @Html.EditorFor(model => model.Fecha_de_nacimiento, new { htmlAttributes = new { @class = "form-control", @placeholder ="Ejemplo:AAAA/MM/DD" } })
@@ -117,13 +117,13 @@
 <div id="dni" class="form-group" style="display:none">
 <div class="row">
     <div id="mdni" class="col-xs-offset-1" style="display:none">
-        <label>DNI</label>
+        <label>DNI:</label>
     </div>
     <div id="mcuit" class ="col-xs-offset-1" style="display:none">
-        <label>CUIT</label>
+        <label>CUIT:</label>
     </div>
     <div class="col-xs-offset-2">
-        @Html.EditorFor(model => model.DNI, new { htmlAttributes = new { @class = "form-control", @placeholder ="Nro. identificacion" } })
+        @Html.EditorFor(model => model.DNI, new { htmlAttributes = new { @class = "form-control", @placeholder ="Nro. Identificacion" } })
     </div>
 @Html.ValidationMessageFor(model => model.DNI, "", new { @class = "text-danger" })
 </div>
@@ -132,10 +132,10 @@
 <div id="email" class="form-group" style="display:none">
 <div class="row">
     <div class="col-xs-offset-1">
-        <label>Email</label>
+        <label>Email:</label>
     </div>
     <div class="col-xs-offset-2">
-        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder ="Ejemplo@servidor.com" } })
+        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder ="ejemplo@servidor.com" } })
     </div>
 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
 </div>
@@ -151,12 +151,11 @@
 
                 <div class="form-group " id="boton" style="display:none">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="crear" class="btn btn-default" />
+                        <input type="submit" value="Crear" class="btn btn-default" />
                     </div>
                 </div>
 </form>
 </div>
-    </div>
 }
 
 <div>

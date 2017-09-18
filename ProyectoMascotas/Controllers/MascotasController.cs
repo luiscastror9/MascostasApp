@@ -46,7 +46,7 @@ namespace ProyectoMascotas.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")] Mascotas mascotas)
+        public ActionResult Create([Bind(Include = "Id,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")] Mascotas mascotas)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ProyectoMascotas.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")] Mascotas mascotas)
+        public ActionResult Edit([Bind(Include = "Id,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")] Mascotas mascotas)
         {
             if (ModelState.IsValid)
             {
