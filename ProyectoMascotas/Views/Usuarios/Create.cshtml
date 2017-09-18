@@ -107,7 +107,7 @@
         <label>Fecha de inscripcion (AAAA/MM/DD):</label><!--agregar en el input AAAA/MM/DD-->
     </div>
     <div class="col-xs-offset-2">
-        @Html.EditorFor(model => model.Fecha_de_nacimiento, new { htmlAttributes = new { @class = "form-control", @placeholder ="Ejemplo:AAAA/MM/DD" } })
+        @Html.EditorFor(model => model.Fecha_de_nacimiento, new { htmlAttributes = new { @class = "form-control", @placeholder ="Ejemplo:AAAA/MM/DD"} })
     </div>
 @Html.ValidationMessageFor(model => model.Fecha_de_nacimiento, "", new { @class = "text-danger" })
 </div>
@@ -151,10 +151,11 @@
 
                 <div class="form-group " id="boton" style="display:none">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Crear" class="btn btn-default" />
+                        <input type="submit" value="Crear" class="btn btn-default" onclick="verificar()" />
                     </div>
                 </div>
 </form>
+
 </div>
 }
 
@@ -226,3 +227,4 @@
         }
     }
 </script>
+

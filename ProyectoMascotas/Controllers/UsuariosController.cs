@@ -128,6 +128,32 @@ namespace ProyectoMascotas.Controllers
             base.Dispose(disposing);
         }
 
+        // POST: Usuarios/Edit/5
+        public ActionResult Validar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Validar(string user, string password)
+        {
+            Usuario us = db.Usuario.FirstOrDefault(d => d.Nombre_de_Usuario == user & d.Pass == password);
+            if (us != null)
+            {
+                return RedirectToAction("Index", "Usuarios");
+            }
+            else
+            {
+                return RedirectToAction("Nohallado", "Usuarios");
+
+            }
+        }
+
+        public ActionResult Nohallado()
+        {
+            ViewBag.Error = "No se encontro ningun usuario";
+            return View();
+        }
 
     }
 
