@@ -35,7 +35,8 @@
     <Property Name="Fecha de nacimiento" Type="date" />
     <Property Name="DNI" Type="nvarchar" MaxLength="50" />
     <Property Name="Tipo de usuario" Type="nchar" MaxLength="10" />
-    <Property Name="Email" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="CPass" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityContainer Name="mascotasModelStoreContainer">
     <EntitySet Name="Mascotas" EntityType="Self.Mascotas" Schema="dbo" store:Type="Tables" />

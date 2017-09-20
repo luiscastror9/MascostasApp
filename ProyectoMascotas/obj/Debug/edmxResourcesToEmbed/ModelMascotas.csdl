@@ -41,5 +41,6 @@
     <Property Name="DNI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Tipo_de_usuario" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CPass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

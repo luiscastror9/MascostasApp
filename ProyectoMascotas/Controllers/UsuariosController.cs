@@ -50,7 +50,7 @@ namespace ProyectoMascotas.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Empresa,Nombre,Apellido,Nombre_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,Tipo_de_usuario,Email")] Usuario usuario)
+        public ActionResult Create([Bind(Include = "Id,Empresa,Nombre,Apellido,Nombre_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,Tipo_de_usuario,Email,CPass")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace ProyectoMascotas.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Empresa,Nombre,Apellido,Nombre_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,Tipo_de_usuario,Email")] Usuario usuario)
+        public ActionResult Edit([Bind(Include = "Id,Empresa,Nombre,Apellido,Nombre_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,Tipo_de_usuario,Email,CPass")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -128,23 +128,29 @@ namespace ProyectoMascotas.Controllers
             base.Dispose(disposing);
         }
 
-        // POST: Usuarios/Edit/5
+       
         public ActionResult Validar()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Validar(string user, string password)
+        [ValidateAntiForgeryToken]
+        public ActionResult Validar(string Nombre_de_Usuario, string Pass, Usuario usuario)
         {
-            Usuario us = db.Usuario.FirstOrDefault(d => d.Nombre_de_Usuario == user & d.Pass == password);
+            Usuario us = db.Usuario.FirstOrDefault(d => d.Nombre_de_Usuario == Nombre_de_Usuario & d.Pass == Pass);
             if (us != null)
             {
                 return RedirectToAction("Index", "Usuarios");
             }
             else
             {
-                return RedirectToAction("Nohallado", "Usuarios");
+                //return RedirectToAction("Nohallado", "Usuarios");
+                //ViewBag.Error = "No se encontro ningun usuario";
+
+                //return View();
+                ModelState.AddModelError("", "Intento de inicio de sesión no válido.");
+                return View();
 
             }
         }
@@ -155,6 +161,6 @@ namespace ProyectoMascotas.Controllers
             return View();
         }
 
-    }
 
+    }
 }
