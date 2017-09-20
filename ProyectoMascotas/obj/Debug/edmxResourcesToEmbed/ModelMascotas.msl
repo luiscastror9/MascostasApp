@@ -27,6 +27,7 @@
     <EntitySetMapping Name="Usuario">
       <EntityTypeMapping TypeName="mascotasModel.Usuario">
         <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="CPass" ColumnName="CPass" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Tipo_de_usuario" ColumnName="Tipo de usuario" />
           <ScalarProperty Name="DNI" ColumnName="DNI" />

@@ -40,7 +40,8 @@
           <Property Name="Fecha de nacimiento" Type="date" />
           <Property Name="DNI" Type="nvarchar" MaxLength="50" />
           <Property Name="Tipo de usuario" Type="nchar" MaxLength="10" />
-          <Property Name="Email" Type="nvarchar" MaxLength="20" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="CPass" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="mascotasModelStoreContainer">
           <EntitySet Name="Mascotas" EntityType="Self.Mascotas" Schema="dbo" store:Type="Tables" />
@@ -92,6 +93,7 @@
           <Property Name="DNI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Tipo_de_usuario" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CPass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -125,6 +127,7 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="mascotasModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="CPass" ColumnName="CPass" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Tipo_de_usuario" ColumnName="Tipo de usuario" />
                 <ScalarProperty Name="DNI" ColumnName="DNI" />

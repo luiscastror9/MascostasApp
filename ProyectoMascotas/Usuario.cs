@@ -11,7 +11,6 @@ namespace ProyectoMascotas
 {
     using System;
     using System.Collections.Generic;
-    
     [System.ComponentModel.DataAnnotations.MetadataType(typeof(Models.ValidarUsuario))]
     public partial class Usuario
     {
@@ -26,5 +25,6 @@ namespace ProyectoMascotas
         public string DNI { get; set; }
         public string Tipo_de_usuario { get; set; }
         public string Email { get; set; }
+        public string CPass { get; set; }
     }
 }
