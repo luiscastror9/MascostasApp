@@ -155,8 +155,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FrontController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MascotasController.cs" />
+    <Compile Include="Controllers\PaginaController.cs" />
     <Compile Include="Controllers\StatusController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
@@ -202,6 +204,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Imagenes\5B1.jpg" />
+    <Content Include="Content\Imagenes\Aviso.png" />
+    <Content Include="Content\Imagenes\descarga.jpg" />
+    <Content Include="Content\Imagenes\fondo.jpg" />
+    <Content Include="Content\Imagenes\Gato llorando.png" />
+    <Content Include="Content\Imagenes\images.jpg" />
+    <Content Include="Content\Imagenes\Lentes.png" />
+    <Content Include="Content\Imagenes\Perro.png" />
+    <Content Include="Content\Iniciocss.css" />
+    <Content Include="Content\PaginaCSS.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -275,6 +287,8 @@
     <Content Include="Views\Mascotas\Index.cshtml" />
     <Content Include="Views\Usuarios\Validar.cshtml" />
     <Content Include="Views\Usuarios\Nohallado.cshtml" />
+    <Content Include="Views\Front\Index.cshtml" />
+    <Content Include="Views\Pagina\Pagina.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -285,6 +299,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
