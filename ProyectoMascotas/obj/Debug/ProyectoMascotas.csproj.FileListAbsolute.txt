@@ -632,6 +632,246 @@ C:\Users\ComIT2\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web
 C:\Users\ComIT2\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\ComIT2\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
 C:\Users\ComIT2\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
+<<<<<<< HEAD
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\ApplicationInsights.config
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe.config
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csc.rsp
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csi.exe
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csi.rsp
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\System.AppContext.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.exe
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.exe.config
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.rsp
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\VBCSCompiler.exe
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.dll.config
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.pdb
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Antlr3.Runtime.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\EntityFramework.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\EntityFramework.SqlServer.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Web.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Newtonsoft.Json.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.Helpers.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.Mvc.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.Optimization.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.Razor.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Razor.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\WebActivatorEx.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\WebGrease.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\EntityFramework.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\EntityFramework.SqlServer.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.Helpers.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.Mvc.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.Optimization.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.Razor.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Razor.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Antlr3.Runtime.pdb
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Newtonsoft.Json.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Web.xml
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.Razor.resources.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
+C:\Users\Comunidad IT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\ApplicationInsights.config
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe.config
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\csc.rsp
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\csi.exe
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\csi.rsp
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\System.AppContext.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.exe
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.exe.config
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.rsp
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\VBCSCompiler.exe
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.dll.config
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.pdb
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Antlr3.Runtime.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\EntityFramework.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\EntityFramework.SqlServer.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Web.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.ApplicationInsights.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Newtonsoft.Json.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.Helpers.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.Mvc.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.Optimization.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.Razor.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Deployment.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Razor.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\WebActivatorEx.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\WebGrease.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\EntityFramework.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\EntityFramework.SqlServer.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.Helpers.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.Mvc.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.Optimization.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.Razor.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Deployment.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Razor.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Antlr3.Runtime.pdb
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Newtonsoft.Json.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.ApplicationInsights.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Web.xml
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\es\System.Web.Helpers.resources.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\es\System.Web.Mvc.resources.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\es\System.Web.Optimization.resources.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\es\System.Web.Razor.resources.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.resources.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csproj.CoreCompileInputs.cache
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
+C:\Users\matia\Desktop\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\ApplicationInsights.config
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe.config
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\csc.rsp
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\csi.exe
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\csi.rsp
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\System.AppContext.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.exe
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.exe.config
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\vbc.rsp
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\VBCSCompiler.exe
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.dll.config
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\ProyectoMascotas.pdb
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Antlr3.Runtime.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\EntityFramework.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\EntityFramework.SqlServer.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Web.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.ApplicationInsights.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Newtonsoft.Json.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.Helpers.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.Mvc.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.Optimization.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.Razor.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Deployment.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Razor.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\WebActivatorEx.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\WebGrease.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\EntityFramework.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\EntityFramework.SqlServer.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.Helpers.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.Mvc.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.Optimization.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.Razor.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Deployment.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\System.Web.WebPages.Razor.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Antlr3.Runtime.pdb
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Newtonsoft.Json.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.ApplicationInsights.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\Microsoft.AI.Web.xml
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\es\System.Web.Helpers.resources.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\es\System.Web.Mvc.resources.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\es\System.Web.Optimization.resources.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\es\System.Web.Razor.resources.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.resources.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
+C:\Users\CIT\Desktop\maascotas\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
+=======
 C:\Users\Mar\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\ApplicationInsights.config
 C:\Users\Mar\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe
 C:\Users\Mar\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe.config
@@ -712,3 +952,4 @@ C:\Users\Mar\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMa
 C:\Users\Mar\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csproj.CoreCompileInputs.cache
 C:\Users\Mar\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
 C:\Users\Mar\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
+>>>>>>> master

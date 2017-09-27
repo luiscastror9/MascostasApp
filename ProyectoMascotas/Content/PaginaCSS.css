@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+#imgenes {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+=======
 #1 {
         background-color: darkblue;
     height: 306px;
@@ -23,3 +30,4 @@ a.btn:hover{
 body{
 	background-color: #FFF;
 }
+>>>>>>> master

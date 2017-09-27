@@ -141,7 +141,16 @@ namespace ProyectoMascotas.Controllers
             Usuario us = db.Usuario.FirstOrDefault(d => d.Nombre_de_Usuario == Nombre_de_Usuario & d.Pass == Pass);
             if (us != null)
             {
+<<<<<<< HEAD
+                                Request.Cookies.Add(new HttpCookie("login", "True"));
+                Request.Cookies["login"].Expires = DateTime.Now.AddHours(1);
+                Request.Cookies.Add(new HttpCookie("Nombre_de_Usuario", Nombre_de_Usuario));
+                Request.Cookies["Nombre_de_Usuario"].Expires = DateTime.Now.AddHours(1);
+                Response.Redirect("Pagina/Pagina",false);
+                return RedirectToAction("", "", us);
+=======
                 return RedirectToAction("Index", "Usuarios");
+>>>>>>> master
             }
             else
             {
