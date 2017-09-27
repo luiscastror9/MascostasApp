@@ -236,7 +236,7 @@ $.validator = function( options, form ) {
 $.validator.format = function(source, params) {
 	/// <summary>
 	/// Replaces {n} placeholders with arguments.
-	/// One or more arguments can be passed, in addition to the string template itself, to insert
+	/// One or more arguments can be Passed, in addition to the string template itself, to insert
 	/// into the string.
 	/// </summary>
 	/// <param name="source" type="String">
@@ -380,7 +380,7 @@ $.extend($.validator, {
 				validator.settings[eventType] && validator.settings[eventType].call(validator, this[0] );
 			}
 			$(this.currentForm)
-				.validateDelegate(":text, :password, :file, select, textarea", "focusin focusout keyup", delegate)
+				.validateDelegate(":text, :Password, :file, select, textarea", "focusin focusout keyup", delegate)
 				.validateDelegate(":radio, :checkbox, select, option", "click", delegate);
 
 			if (this.settings.invalidHandler)

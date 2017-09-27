@@ -10,9 +10,9 @@ namespace ProyectoMascotas.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Titulo = "AppMascotas";
             return View();
         }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -26,5 +26,6 @@ namespace ProyectoMascotas.Controllers
 
             return View();
         }
+
     }
 }

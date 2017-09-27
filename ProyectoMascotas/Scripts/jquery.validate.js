@@ -299,8 +299,8 @@ $.extend($.validator, {
 		url: "Please enter a valid URL.",
 		date: "Please enter a valid date.",
 		dateISO: "Please enter a valid date (ISO).",
-		number: "Please enter a valid number.",
-		digits: "Please enter only digits.",
+        number: "Please enter a valid number.",
+        digits: "Please enter only digits.",
 		creditcard: "Please enter a valid credit card number.",
 		equalTo: "Please enter the same value again.",
 		maxlength: $.validator.format("Please enter no more than {0} characters."),
@@ -348,7 +348,7 @@ $.extend($.validator, {
 				}
 			}
 			$(this.currentForm)
-				.validateDelegate(":text, [type='password'], [type='file'], select, textarea, " +
+				.validateDelegate(":text, [type='Password'], [type='file'], select, textarea, " +
 					"[type='number'], [type='search'] ,[type='tel'], [type='url'], " +
 					"[type='email'], [type='datetime'], [type='date'], [type='month'], " +
 					"[type='week'], [type='time'], [type='datetime-local'], " +

@@ -1,0 +1,193 @@
+﻿@model ProyectoMascotas.Usuario
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <form name="registro">
+        <div class="form-horizontal">
+            <h4>Usuario</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <label>Seleccione el tipo de usuario:</label>
+            <select name='TIPO' style='font-family:Verdana, verdana' onChange='ChangeUrlTipo(this.form)'>
+                <option value=0>Seleccionar</option>
+                <option value=1>Individuo</option>
+                <option value=2>Empresa</option>
+            </select>
+            <br /><br />
+
+            <div id="empresa" class="form-group" style="display:none">
+                @Html.LabelFor(model => model.Empresa, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.Empresa, new { htmlAttributes = new { @class = "form-control", @placeholder = "Escriba su razon social" } })
+                    @Html.ValidationMessageFor(model => model.Empresa, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div id="nombre" class="form-group" style="display:none">
+                @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control", @placeholder = "Escriba su nombre" } })
+                    @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div id="apellido" class="form-group" style="display:none">
+                @Html.LabelFor(model => model.Apellido, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.Apellido, new { htmlAttributes = new { @class = "form-control", @placeholder = "Escriba su apellido" } })
+                    @Html.ValidationMessageFor(model => model.Apellido, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div id="formdos" style="display:none">
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="Nombre_de_Usuario">Nombre de Usuario</label>
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Nombre_de_Usuario, new { htmlAttributes = new { @class = "form-control", @placeholder = "Escriba el nombre de usuario" } })
+                        @Html.ValidationMessageFor(model => model.Nombre_de_Usuario, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="Pass">Contraseña</label>
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control", @placeholder = "Escriba su contraseña",  Type = "password" } })
+                        @Html.ValidationMessageFor(model => model.Pass, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3" for="Pass">Confirmar contraseña</label>
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.CPass, new { htmlAttributes = new { @class = "form-control", @placeholder = "Escriba su contraseña",  Type = "password" } })
+                        @Html.ValidationMessageFor(model => model.CPass, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Localidad, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Localidad, new { htmlAttributes = new { @class = "form-control", @placeholder = "Escriba la localidad" } })
+                        @Html.ValidationMessageFor(model => model.Localidad, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div id="fi"><label class="control-label col-md-3" for="Fecha_de_nacimiento">Fecha de Nacimiento (AAAA/MM/DD)</label></div>
+                    <div id="fe"><label class="control-label col-md-3" for="Fecha_de_nacimiento">Fecha de Inscripcion (AAAA/MM/DD)</label></div>
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Fecha_de_nacimiento, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ejemplo: AAAA/MM/DD" } })
+                        @Html.ValidationMessageFor(model => model.Fecha_de_nacimiento, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div id="di"><label class="control-label col-md-3" for="DNI">DNI</label></div>
+                    <div id="de"><label class="control-label col-md-3" for="DNI">CUIT</label></div>
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.DNI, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nro. Identificacion" } })
+                        @Html.ValidationMessageFor(model => model.DNI, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group" style="display:none">
+                    @Html.LabelFor(model => model.Tipo_de_usuario, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Tipo_de_usuario, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Tipo_de_usuario, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "ejemplo@servidor.com" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">    
+                    <div class="col-md-offset-6 col-md-6">
+                        <input type="submit" value="Crear" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </form>
+
+
+
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+<div>
+    @Html.ActionLink("¿Ya tienes una cuenta?", "Validar")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+        <script language='JavaScript'>
+            function ChangeUrlTipo(formulaire) {
+                if (formulaire.TIPO.selectedIndex == 1) {
+                    $('#Tipo_de_usuario').attr('value', '1');
+                    $('#Empresa').attr('value', 'No Aplica');
+                    $('#Nombre').attr('value', '');
+                    $('#Apellido').attr('value', '');
+                    $('#empresa').hide();
+                    $('#fe').hide();
+                    $('#de').hide();
+                    $('#nombre').css('display', 'block');
+                    $('#apellido').css('display', 'block');
+                    $('#formdos').css('display', 'block');
+                    $('#fi').css('display', 'block');
+                    $('#di').css('display', 'block');
+
+                } else {
+                    if (formulaire.TIPO.selectedIndex == 2) {
+                        $('#Tipo_de_usuario').attr('value', '2');
+                        $('#Nombre').attr('value', 'No Aplica');
+                        $('#Apellido').attr('value', 'No Aplica');
+                        $('#Empresa').attr('value', '');
+                        $('#apellido').hide();
+                        $('#nombre').hide();
+                        $('#fi').hide();
+                        $('#di').hide();
+                        $('#empresa').css('display', 'block');
+                        $('#formdos').css('display', 'block');
+                        $('#fe').css('display', 'block');
+                        $('#de').css('display', 'block');
+                    } else {
+                        if (formulaire.TIPO.selectedIndex == 0) {
+                            $('#Tipo_de_usuario').attr('value', '0');
+                            $('#Nombre').attr('value', '');
+                            $('#Apellido').attr('value', '');
+                            $('#Empresa').attr('value', '');
+                            $('#formdos').hide();
+                            $('#empresa').hide();
+                            $('#nombre').hide();
+                            $('#apellido').hide();
+                        }
+                    }
+                }
+            }
+        </script>
+
