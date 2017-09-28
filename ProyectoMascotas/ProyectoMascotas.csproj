@@ -157,10 +157,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\FrontController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-<<<<<<< HEAD
-    <Compile Include="Controllers\LoginController.cs" />
-=======
->>>>>>> master
     <Compile Include="Controllers\MascotasController.cs" />
     <Compile Include="Controllers\PaginaController.cs" />
     <Compile Include="Controllers\StatusController.cs" />
@@ -215,10 +211,6 @@
     <Content Include="Content\Imagenes\Gato llorando.png" />
     <Content Include="Content\Imagenes\images.jpg" />
     <Content Include="Content\Imagenes\Lentes.png" />
-<<<<<<< HEAD
-    <Content Include="Content\Imagenes\logo2.png" />
-=======
->>>>>>> master
     <Content Include="Content\Imagenes\Perro.png" />
     <Content Include="Content\Iniciocss.css" />
     <Content Include="Content\PaginaCSS.css" />
@@ -297,10 +289,6 @@
     <Content Include="Views\Usuarios\Nohallado.cshtml" />
     <Content Include="Views\Front\Index.cshtml" />
     <Content Include="Views\Pagina\Pagina.cshtml" />
-<<<<<<< HEAD
-    <Content Include="Views\Login\Login.cshtml" />
-=======
->>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
