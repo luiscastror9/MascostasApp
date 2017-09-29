@@ -28,7 +28,7 @@
             </label>
 
             <div class="col-md-9">
-                @Html.PasswordFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control", Type = "password" } })
                 @Html.ValidationMessageFor(model => model.Pass, "", new { @class = "text-danger" })
 
             </div>
