@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>5rreas</title>
+    <link rel="stylesheet" href="~/Content/stylelogin.css">
+    <style type="text/css">
+        * {
+            padding: 10px;
+            margin: 0px;
+        }
+
+        section {
+            width: 1025px;
+            height: 150px;
+        }
+
+        .redes {
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-left: 20px;
+            transition: all 0.4s ease-out;
+            border-radius: 50%
+        }
+
+            .redes:hover {
+                cursor: pointer;
+                transform: translateY(-20px);
+                box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+            }
+
+
+
+
+
+
+        .icono {
+            margin: 0px auto;
+            padding: 35px;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loginBox">
+        <img src="~/Content/Imagenes/user2.png" class="user">
+        <h2>Iniciar sesión</h2>
+        <form>
+            <p>E-mail</p>
+            <input type="text" name="" placeholder="Ingresa E-mail">
+            <p>Contraseña</p>
+            <input type="password" name="" placeholder="♥♥♥♥♥♥♥♥♥♥♥♥">
+            <input type="submit" name="" value="Sign In">
+            <a href="#">Olvidé la contraseña</a>
+
+
+        </form>
+    </div>
+    <section>
+        <div class="redes" id="facebook">
+            <img class="icono" src="~/Content/Imagenes/facebook.png">
+        </div>
+        <div class="redes" id="twitter">
+            <img class="icono" src="~/Content/Imagenes/twitter.png">
+        </div>
+        <div class="redes" id="instagram">
+            <img class="icono" src="~/Content/Imagenes/instagram.png">
+        </div>
+        <div class="redes" id="plus">
+            <img class="icono" src="~/Content/Imagenes/plus.png">
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>

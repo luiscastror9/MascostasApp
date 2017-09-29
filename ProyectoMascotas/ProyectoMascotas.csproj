@@ -207,13 +207,20 @@
     <Content Include="Content\Imagenes\5B1.jpg" />
     <Content Include="Content\Imagenes\Aviso.png" />
     <Content Include="Content\Imagenes\descarga.jpg" />
+    <Content Include="Content\Imagenes\facebook.png" />
     <Content Include="Content\Imagenes\fondo.jpg" />
     <Content Include="Content\Imagenes\Gato llorando.png" />
     <Content Include="Content\Imagenes\images.jpg" />
+    <Content Include="Content\Imagenes\instagram.png" />
     <Content Include="Content\Imagenes\Lentes.png" />
     <Content Include="Content\Imagenes\Perro.png" />
+    <Content Include="Content\Imagenes\plus.png" />
+    <Content Include="Content\Imagenes\twitter.png" />
+    <Content Include="Content\Imagenes\user2.png" />
+    <Content Include="Content\Imagenes\wallpaper.jpg" />
     <Content Include="Content\Iniciocss.css" />
     <Content Include="Content\PaginaCSS.css" />
+    <Content Include="Content\stylelogin.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -289,6 +296,7 @@
     <Content Include="Views\Usuarios\Nohallado.cshtml" />
     <Content Include="Views\Front\Index.cshtml" />
     <Content Include="Views\Pagina\Pagina.cshtml" />
+    <Content Include="Views\Front\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
