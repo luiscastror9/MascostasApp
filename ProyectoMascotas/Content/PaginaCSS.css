@@ -3,7 +3,9 @@
     height: 306px;
 }
 img {
-    justify-content: center;
+       width: 30%;
+    display: block;
+    margin: auto;
 }
 
 a.btn{
