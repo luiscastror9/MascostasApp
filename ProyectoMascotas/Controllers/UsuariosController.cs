@@ -50,9 +50,45 @@ namespace ProyectoMascotas.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Empresa,Nombre,Apellido,Nombre_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,Tipo_de_usuario,Email,CPass")] Usuario usuario)
+        public ActionResult Create(string Email, string Nombre_de_Usuario, string DNI, [Bind(Include = "Id,Empresa,Nombre,Apellido,Nombre_de_Usuario,Pass,Localidad,Fecha_de_nacimiento,DNI,Tipo_de_usuario,Email,CPass")] Usuario usuario)
         {
-            if (ModelState.IsValid)
+            Usuario us = db.Usuario.FirstOrDefault(d => d.Email == Email);
+            Usuario es = db.Usuario.FirstOrDefault(d => d.Nombre_de_Usuario == Nombre_de_Usuario);
+            Usuario ds = db.Usuario.FirstOrDefault(d => d.DNI == DNI);
+
+            if (us != null){
+                ModelState.AddModelError("", "Email en uso");
+                if (es != null)
+                {
+                    ModelState.AddModelError("", "Usuario en uso"); 
+                }
+                if (ds != null)
+                {
+                    ModelState.AddModelError("", "N° de Identificacion en uso");
+                }
+
+                return View();
+
+            }else             if (es != null){
+                ModelState.AddModelError("", "Usuario en uso");
+                if (ds != null)
+                {
+                    ModelState.AddModelError("", "N° de Identificacion en uso");
+                }
+                return View();
+            }
+            else if (ds != null)
+            {
+                ModelState.AddModelError("", "N° de Identificacion en uso");
+                return View();
+            }
+
+
+
+            else
+            {
+
+                if (ModelState.IsValid)
             {
                 db.Usuario.Add(usuario);
                 db.SaveChanges();
@@ -62,8 +98,12 @@ namespace ProyectoMascotas.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Edit/5
-        public ActionResult Edit(int? id)
+    }
+
+
+
+    // GET: Usuarios/Edit/5
+    public ActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -141,7 +181,8 @@ namespace ProyectoMascotas.Controllers
             Usuario us = db.Usuario.FirstOrDefault(d => d.Nombre_de_Usuario == Nombre_de_Usuario & d.Pass == Pass);
             if (us != null)
             {
-                return RedirectToAction("Index", "Usuarios");
+                Session["Username"] = new Usuario  { Nombre_de_Usuario= us.Nombre_de_Usuario };
+                return RedirectToAction("Index", "Home");
             }
             else
             {

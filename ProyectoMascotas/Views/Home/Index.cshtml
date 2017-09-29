@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var usuario = Session["Username"] as Usuario;
 }
-
+<h1>Bienvenido, @usuario.Nombre_de_Usuario </h1>
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
