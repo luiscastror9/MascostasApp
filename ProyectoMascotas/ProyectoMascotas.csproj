@@ -289,6 +289,7 @@
     <Content Include="Views\Usuarios\Nohallado.cshtml" />
     <Content Include="Views\Front\Index.cshtml" />
     <Content Include="Views\Pagina\Pagina.cshtml" />
+    <Content Include="Views\Front\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
