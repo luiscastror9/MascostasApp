@@ -1,4 +1,4 @@
-﻿
+﻿@model ProyectoMascotas.Usuario
 @{
     Layout = null;
 }
@@ -50,21 +50,31 @@
 </head>
 
 <body>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
     <div class="loginBox">
         <img src="~/Content/Imagenes/user2.png" class="user">
         <h2>Iniciar sesión</h2>
         <form>
-            <p>E-mail</p>
-            <input type="text" name="" placeholder="Ingresa E-mail">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <p>Usuario</p>
+            @Html.EditorFor(model => model.Nombre_de_Usuario, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Nombre_de_Usuario, "", new { @class = "text-danger" })
+            @*<input type="text" name="" placeholder="Ingresa E-mail">*@
             <p>Contraseña</p>
-            <input type="password" name="" placeholder="♥♥♥♥♥♥♥♥♥♥♥♥">
-            <input type="submit" name="" value="Sign In">
-            <a href="#">Olvidé la contraseña</a>
+            @Html.EditorFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control", Type = "password" } })
+            @Html.ValidationMessageFor(model => model.Pass, "", new { @class = "text-danger" })
+            @*<input type="password" name="" placeholder="♥♥♥♥♥♥♥♥♥♥♥♥">*@
+            <input type="submit" value="Sign In">
+            <a href="#">Olvidé mi contraseña</a><br /><br />
+            <br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 
         </form>
     </div>
-    <section>
+    <section style="margin-top:650px;">
         <div class="redes" id="facebook">
             <img class="icono" src="~/Content/Imagenes/facebook.png">
         </div>
@@ -78,9 +88,8 @@
             <img class="icono" src="~/Content/Imagenes/plus.png">
         </div>
 
-
-
     </section>
+}
 </body>
 
 </html>

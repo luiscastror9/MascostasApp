@@ -15,8 +15,8 @@
             <li><a class="btn" href="">Cartelera</a></li>
             <li><a class="btn" href="">Dar En Adopción</a></li>
             <li><a class="btn" href="">Quienes Somos</a></li>
-            <li style="float:right" class="btn"><a href="">Registrarse</a></li>
-            <li style="float:right" class="btn"><a href="">Iniciar</a></li>
+            <li style="float:right" class="btn"><a href="@Url.Action("Create","Usuarios", new {})">Registrarse</a></li>
+            <li style="float:right" class="btn"><a href="@Url.Action("Login","Front", new {})">Iniciar</a></li>
         </ul>
     </nav>
     <div align="center">
@@ -26,6 +26,10 @@
         <br>
 
         @Html.ActionLink("Iniciar Sesion", "Login", "Front", null, new { @class="button" })
+
+
+        <br>
+        <br><br>
        </div>
 </body>
 </html>

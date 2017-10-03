@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    var usuario = Session["Username"] as Usuario ;
+    var numid = Session["ID"] as Usuario;
+}
+
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,6 +16,7 @@
     @Scripts.Render("~/bundles/bootstrap")
 </head>
 <body>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -23,8 +29,28 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-align-justify"></span> usuario </a></li>
-                </ul>
+                    @if (Session["Username"] != null)
+                    {
+                        <li>
+                            <a href="@Url.Action("Details","Usuarios", new { @id=@numid.ID })">
+                                <span class="glyphicon glyphicon-align-justify"></span> @usuario.Nombre_de_Usuario
+                            </a>
+                        </li>
+                        <li>
+                            @Html.ActionLink("Cerrar Sesion", "LogOut","Home")
+                        </li>
+
+                    }
+                    else
+                    {
+                        <li>
+                            <a href="@Url.Action("Validar","Usuarios", new {})">
+                                <span class="glyphicon glyphicon-align-justify"></span> Debes iniciar sesion
+                            </a>
+                        </li>
+                    }
+
+                    </ul>
             </div>
         </div>
     </div>
@@ -36,7 +62,8 @@
         </footer>
     </div>
 
-    
+
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
