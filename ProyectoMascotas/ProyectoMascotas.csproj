@@ -214,6 +214,7 @@
     <Content Include="Content\Imagenes\Perro.png" />
     <Content Include="Content\Iniciocss.css" />
     <Content Include="Content\PaginaCSS.css" />
+    <Content Include="Content\stylelogin.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -267,8 +268,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Carteleraperdidos.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Usuarios\Create.cshtml" />
     <Content Include="Views\Usuarios\Delete.cshtml" />
@@ -290,6 +290,10 @@
     <Content Include="Views\Front\Index.cshtml" />
     <Content Include="Views\Pagina\Pagina.cshtml" />
     <Content Include="Views\Front\Login.cshtml" />
+    <Content Include="Views\Home\Daenadopcion.cshtml" />
+    <Content Include="Views\Home\Quiensomos.cshtml" />
+    <Content Include="Views\Home\Adopta.cshtml" />
+    <Content Include="Views\Home\Cartelera.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

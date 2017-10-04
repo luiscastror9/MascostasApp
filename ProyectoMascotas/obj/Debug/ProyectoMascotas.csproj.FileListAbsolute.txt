@@ -232,7 +232,6 @@ C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web
 C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.resources.dll
 C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache
 C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csproj.CoreCompileInputs.cache
 C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
 C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
@@ -711,3 +710,4 @@ C:\Users\CIT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.We
 C:\Users\CIT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache
 C:\Users\CIT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
 C:\Users\CIT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
+C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache

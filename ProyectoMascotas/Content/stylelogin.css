@@ -1,21 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(Imagenes/wallpaper.jpg);
     background-size: cover;
     font-family: sans-serif;
+    background: url(Imagenes/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .loginBox {
     position: absolute;
-    top: 80%;
+    top: 50%;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 350px;
     padding: 80px 40px;
     box-sizing: border-box;
-    height: 420px;
+    height: 500px;
     background: rgba(0, 0, 0, .6);
 }
 
@@ -59,7 +63,7 @@ h2 {
     font-size: 16px;
 }
 
-::placeholder {
+.placeholder {
     color: rgba(255, 255, 255, .5);
 }
 

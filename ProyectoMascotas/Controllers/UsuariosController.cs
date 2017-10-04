@@ -176,20 +176,18 @@ namespace ProyectoMascotas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Validar(string Nombre_de_Usuario, string Pass, Usuario usuario)
+        public ActionResult Validar(string Nombre_de_Usuario, string Pass, string ID, Usuario usuario)
         {
             Usuario us = db.Usuario.FirstOrDefault(d => d.Nombre_de_Usuario == Nombre_de_Usuario & d.Pass == Pass);
+            Usuario numeroid = db.Usuario.FirstOrDefault(d => d.ID == d.ID & d.Nombre_de_Usuario == Nombre_de_Usuario);
             if (us != null)
             {
                 Session["Username"] = new Usuario  { Nombre_de_Usuario= us.Nombre_de_Usuario };
+                Session["ID"] = new Usuario { ID = numeroid.ID };
                 return RedirectToAction("Index", "Home");
             }
             else
             {
-                //return RedirectToAction("Nohallado", "Usuarios");
-                //ViewBag.Error = "No se encontro ningun usuario";
-
-                //return View();
                 ModelState.AddModelError("", "Intento de inicio de sesión no válido.");
                 return View();
 
@@ -201,6 +199,8 @@ namespace ProyectoMascotas.Controllers
             ViewBag.Error = "No se encontro ningun usuario";
             return View();
         }
+
+
 
 
     }

@@ -6,7 +6,7 @@
 //     Los cambios manuales en este archivo se sobrescribirán si se regenera el código.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
+using System.ComponentModel.DataAnnotations;
 namespace ProyectoMascotas
 {
     using System;
@@ -15,6 +15,7 @@ namespace ProyectoMascotas
     public partial class Mascotas
     {
         public int Id { get; set; }
+        [Required(ErrorMessage = "Este dato es obligatorio")]
         public string Animal { get; set; }
         public string Raza { get; set; }
         public string Ubicacion { get; set; }
