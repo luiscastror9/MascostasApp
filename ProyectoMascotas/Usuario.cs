@@ -11,7 +11,7 @@ namespace ProyectoMascotas
 {
     using System;
     using System.Collections.Generic;
-    [System.ComponentModel.DataAnnotations.MetadataType(typeof(Models.ValidarUsuario))]
+    
     public partial class Usuario
     {
         public int ID { get; set; }

@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Animal" Type="nvarchar" MaxLength="50" />
     <Property Name="Raza" Type="nvarchar" MaxLength="50" />
     <Property Name="Ubicacion" Type="nvarchar" MaxLength="50" />

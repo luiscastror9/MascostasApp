@@ -293,6 +293,7 @@
     <Content Include="Views\Home\Daenadopcion.cshtml" />
     <Content Include="Views\Home\Quiensomos.cshtml" />
     <Content Include="Views\Home\Adopta.cshtml" />
+    <Content Include="Views\Home\Cartelera.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -23,6 +23,8 @@ namespace ProyectoMascotas.Models
         [Required(ErrorMessage = "Este dato es obligatorio")]
         public string Nombre_de_Usuario { get; set; }
 
+        [StringLength(100, ErrorMessage = "El número de caracteres de {0} debe ser al menos {2}.", MinimumLength = 6)]
+        [Display(Name = "Contraseña")]
         [Required(ErrorMessage = "Este dato es obligatorio")]
         public string Pass { get; set; }        
 
