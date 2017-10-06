@@ -211,6 +211,7 @@
     <Content Include="Content\Imagenes\Gato llorando.png" />
     <Content Include="Content\Imagenes\images.jpg" />
     <Content Include="Content\Imagenes\Lentes.png" />
+    <Content Include="Content\Imagenes\logo2blanco.png" />
     <Content Include="Content\Imagenes\Perro.png" />
     <Content Include="Content\Iniciocss.css" />
     <Content Include="Content\PaginaCSS.css" />
@@ -308,6 +309,9 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
