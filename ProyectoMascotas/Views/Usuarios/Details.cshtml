@@ -6,14 +6,10 @@
 }
 
 
-<h2>Details</h2>
-
+<br /><br /><br /><br /><br />
 <div>
-    <h4>Usuario</h4>
-    <hr />
-
-    
     <dl class="dl-horizontal">
+    
 @if (Model.Tipo_de_usuario.Trim() == "2")
 {
         <dt>
@@ -41,7 +37,7 @@
             </dd>
     }
             <dt>
-                Nombre de Usuario
+                @Html.DisplayNameFor(model => model.Nombre_de_Usuario)
             </dt>
 
             <dd>
@@ -102,8 +98,12 @@
         </dl>
 
 </div>
+
+
+
+
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
 </p>
 
