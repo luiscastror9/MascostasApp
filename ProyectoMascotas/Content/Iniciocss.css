@@ -2,8 +2,8 @@
 body {
     width: 97%;
     background-image: url("Imagenes/fondo.jpg");
-    background-repeat:no-repeat;
-  background-size:100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 nav {
@@ -57,7 +57,7 @@ a{
      margin-top: auto; 
     font-size: 1.2em;
     font-family: "Calibri Light";
-    color: #958E8E;
+    color: white;
     text-align: center;
 }
 
