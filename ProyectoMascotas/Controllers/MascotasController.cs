@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ProyectoMascotas;
+using System.IO;
 
 namespace ProyectoMascotas.Controllers
 {
@@ -35,19 +36,29 @@ namespace ProyectoMascotas.Controllers
             return View(mascotas);
         }
 
+
+
         // GET: Mascotas/Create
         public ActionResult Create()
         {
             return View();
         }
-
+        
         // POST: Mascotas/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")] Mascotas mascotas)
+        public ActionResult Create([Bind(Include = "Id,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")] Mascotas mascotas, HttpPostedFileBase image1)
         {
+            var db = new mascotasEntities1();
+            if (image1 != null)
+            {
+                mascotas.Imagen = new byte[image1.ContentLength];
+                image1.InputStream.Read(mascotas.Imagen, 0, image1.ContentLength);
+
+            }
+
             if (ModelState.IsValid)
             {
                 db.Mascotas.Add(mascotas);

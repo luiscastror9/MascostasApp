@@ -50,4 +50,6 @@ namespace ProyectoMascotas.Models
         [Compare(nameof(Pass), ErrorMessage = "Las contraseñas no coinciden")]
         public string CPass { get; set; }
     }
+
+
 }

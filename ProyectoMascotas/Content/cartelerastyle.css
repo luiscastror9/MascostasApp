@@ -1,0 +1,10 @@
+﻿@font-face {
+    font-family: "jazmin";
+    src: url(/Content/tipografiacartelera.otf) format("truetype");
+}
+
+
+.font {
+    font-family: jazmin;
+    color: #00A79D
+}

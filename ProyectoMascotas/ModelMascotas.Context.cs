@@ -25,8 +25,8 @@ namespace ProyectoMascotas
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Mascotas> Mascotas { get; set; }
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Mascotas> Mascotas { get; set; }
     }
 }

@@ -13,6 +13,7 @@
     <Property Name="Vacunas" Type="nvarchar" MaxLength="50" />
     <Property Name="Edad" Type="int" />
     <Property Name="Status" Type="int" />
+    <Property Name="Imagen" Type="varbinary(max)" />
   </EntityType>
   <EntityType Name="Status">
     <Key>

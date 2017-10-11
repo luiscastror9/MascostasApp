@@ -31,18 +31,13 @@
                 <ul class="nav navbar-nav navbar-right">
                     @if (Session["Username"] != null)
                     {
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <li>
+                            <a href="@Url.Action("Details","Usuarios", new { @id=@numid.ID })">
                                 <span class="glyphicon glyphicon-align-justify"></span> @usuario.Nombre_de_Usuario
-                                    <span class="caret"></span></a>
-                        
-
-                        <ul class="dropdown-menu">
-                            <li><a href="@Url.Action("Details","Usuarios", new { @id=@numid.ID })">Perfil</a></li>
-                            <li><a href="#">Tus mascotas</a></li>
-                            <li>@Html.ActionLink("Cerrar Sesion", "LogOut", "Home")</li>
-                        </ul>
-
+                            </a>
+                        </li>
+                        <li>
+                            @Html.ActionLink("Cerrar Sesion", "LogOut","Home")
                         </li>
 
                     }
@@ -59,16 +54,17 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         @RenderBody()
+
+    </div>
+    <div class="container">
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - AppMascotas</p>
         </footer>
-    </div>
-
-
-    @RenderSection("scripts", required: false)
+        </div>
+        @RenderSection("scripts", required: false)
 
 </body>
 </html>
