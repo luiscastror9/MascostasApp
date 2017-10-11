@@ -18,6 +18,7 @@
           <Property Name="Vacunas" Type="nvarchar" MaxLength="50" />
           <Property Name="Edad" Type="int" />
           <Property Name="Status" Type="int" />
+          <Property Name="Imagen" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="Status">
           <Key>
@@ -53,24 +54,10 @@
     <edmx:ConceptualModels>
       <Schema Namespace="mascotasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="mascotasEntities1" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Mascotas" EntityType="mascotasModel.Mascotas" />
           <EntitySet Name="Status" EntityType="mascotasModel.Status" />
           <EntitySet Name="Usuario" EntityType="mascotasModel.Usuario" />
+          <EntitySet Name="Mascotas" EntityType="mascotasModel.Mascotas" />
         </EntityContainer>
-        <EntityType Name="Mascotas">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
-          <Property Name="Animal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Raza" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Ubicacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Sexo" Type="Boolean" />
-          <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Vacunas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Edad" Type="Int32" />
-          <Property Name="Status" Type="Int32" />
-        </EntityType>
         <EntityType Name="Status">
           <Key>
             <PropertyRef Name="ID" />
@@ -95,27 +82,27 @@
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CPass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityType Name="Mascotas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Animal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Raza" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ubicacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sexo" Type="Boolean" />
+          <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vacunas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Edad" Type="Int32" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="mascotasModelStoreContainer" CdmEntityContainer="mascotasEntities1">
-          <EntitySetMapping Name="Mascotas">
-            <EntityTypeMapping TypeName="mascotasModel.Mascotas">
-              <MappingFragment StoreEntitySet="Mascotas">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Edad" ColumnName="Edad" />
-                <ScalarProperty Name="Vacunas" ColumnName="Vacunas" />
-                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
-                <ScalarProperty Name="Sexo" ColumnName="Sexo" />
-                <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
-                <ScalarProperty Name="Raza" ColumnName="Raza" />
-                <ScalarProperty Name="Animal" ColumnName="Animal" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Status">
             <EntityTypeMapping TypeName="mascotasModel.Status">
               <MappingFragment StoreEntitySet="Status">
@@ -139,6 +126,22 @@
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="Empresa" ColumnName="Empresa" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mascotas">
+            <EntityTypeMapping TypeName="mascotasModel.Mascotas">
+              <MappingFragment StoreEntitySet="Mascotas">
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="Vacunas" ColumnName="Vacunas" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+                <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+                <ScalarProperty Name="Raza" ColumnName="Raza" />
+                <ScalarProperty Name="Animal" ColumnName="Animal" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -204,12 +204,14 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\carteleramascotas.css" />
+    <Content Include="Content\cartelerastyle.css" />
     <Content Include="Content\Imagenes\5B1.jpg" />
     <Content Include="Content\Imagenes\Aviso.png" />
     <Content Include="Content\Imagenes\descarga.jpg" />
     <Content Include="Content\Imagenes\fondo.jpg" />
     <Content Include="Content\Imagenes\Gato llorando.png" />
-    <Content Include="Content\Imagenes\images.jpg" />
+    <Content Include="Content\Imagenes\57.jpg" />
     <Content Include="Content\Imagenes\Lentes.png" />
     <Content Include="Content\Imagenes\Perro.png" />
     <Content Include="Content\Iniciocss.css" />
@@ -234,6 +236,7 @@
     <Content Include="ModelMascotas.edmx.diagram">
       <DependentUpon>ModelMascotas.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\tipografiacartelera.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ModelMascotas.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

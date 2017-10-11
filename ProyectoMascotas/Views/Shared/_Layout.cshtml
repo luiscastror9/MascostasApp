@@ -54,16 +54,17 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         @RenderBody()
+
+    </div>
+    <div class="container">
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - AppMascotas</p>
         </footer>
-    </div>
-
-
-    @RenderSection("scripts", required: false)
+        </div>
+        @RenderSection("scripts", required: false)
 
 </body>
 </html>

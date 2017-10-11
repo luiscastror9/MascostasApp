@@ -1,68 +1,44 @@
 ﻿@model IEnumerable<ProyectoMascotas.Mascotas>
+<link rel="stylesheet" href="~/Content/carteleramascotas.css">
 
-
-<table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Animal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Raza)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Ubicacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sexo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descripcion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Vacunas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Edad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th></th>
-        </tr>
-
+<br /><br /><br />
+    <div class="pricing-table pricing-three-column row">
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Animal)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Raza)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Ubicacion)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Sexo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Descripcion)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Vacunas)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Edad)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Status)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </td>
-            </tr>
-        }
 
-    </table>
+
+            <div class="plan col-sm-8 col-lg-4">
+                <div class="plan-name-bronze font">
+                    @{ 
+                        var base64 = Convert.ToBase64String(item.Imagen);
+                        var imgsrc = string.Format("data:image/git;base64,{0}", base64);
+                    }
+                    <img src='@imgsrc' style="max-height:200px;max-width:200px;" />
+                    <h2>@Html.DisplayFor(modelItem => item.Animal)</h2>
+                    <span>@Html.DisplayFor(modelItem => item.Raza)</span>
+                </div>
+                <ul>
+                    <li class="plan-feature">@Html.DisplayNameFor(model => model.Ubicacion): @Html.DisplayFor(modelItem => item.Ubicacion)</li>
+                    <li class="plan-feature">@Html.DisplayNameFor(model => model.Sexo): @Html.DisplayFor(modelItem => item.Sexo)</li>
+                    <li class="plan-feature">@Html.DisplayNameFor(model => model.Descripcion): @Html.DisplayFor(modelItem => item.Descripcion)</li>
+                    <li class="plan-feature">@Html.DisplayNameFor(model => model.Vacunas): @Html.DisplayFor(modelItem => item.Vacunas)</li>
+                    <li class="plan-feature">@Html.DisplayNameFor(model => model.Edad): @Html.DisplayFor(modelItem => item.Edad)</li>
+                    <li class="plan-feature">@Html.DisplayNameFor(model => model.Status): @Html.DisplayFor(modelItem => item.Status)</li>
+                    <li class="plan-feature"><a href="#" class="btn btn-primary btn-plan-select" style="background-color:#00A79D"><i class="icon-white icon-ok"></i>CONTACTAR</a></li>
+
+                </ul>
+            </div>
+
+}
+    </div>
+
+<br /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
