@@ -710,7 +710,6 @@ C:\Users\CIT\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\es\System.Web.We
 C:\Users\CIT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache
 C:\Users\CIT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.dll
 C:\Users\CIT\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.pdb
-C:\Users\Matias\Documents\GitHub\MascostasApp\ProyectoMascotas\obj\Debug\ProyectoMascotas.csprojResolveAssemblyReference.cache
 C:\Users\comunidad-it\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\ApplicationInsights.config
 C:\Users\comunidad-it\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe
 C:\Users\comunidad-it\Documents\GitHub\MascostasApp\ProyectoMascotas\bin\roslyn\csc.exe.config

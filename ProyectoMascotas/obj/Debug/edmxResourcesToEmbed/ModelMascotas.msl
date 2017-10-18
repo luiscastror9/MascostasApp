@@ -30,6 +30,8 @@
     <EntitySetMapping Name="Mascotas">
       <EntityTypeMapping TypeName="mascotasModel.Mascotas">
         <MappingFragment StoreEntitySet="Mascotas">
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="ImagenA" ColumnName="ImagenA" />
           <ScalarProperty Name="Imagen" ColumnName="Imagen" />
           <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="Edad" ColumnName="Edad" />

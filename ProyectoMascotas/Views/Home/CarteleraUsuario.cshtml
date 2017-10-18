@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ProyectoMascotas.Mascotas>
+<link rel="stylesheet" href="~/Content/carteleramascotas.css">
+
+
+
+<br /><br /><br />
+<div class="pricing-table pricing-three-column row">
+    @foreach (var item in Model)
+    {
+
+
+        <div class="plan col-sm-8 col-lg-4">
+            <div class="plan-name-bronze font">
+
+                <a href=""><img id="modalimg" class="" src="@Url.Content(item.ImagenA)" /></a>
+
+                @*<h2>@Html.DisplayFor(modelItem => item.Animal)</h2>
+                    <span>@Html.DisplayFor(modelItem => item.Raza)</span>*@
+            </div>
+            <ul>
+                <li class="plan-feature">@Html.DisplayNameFor(model => model.Raza): @Html.DisplayFor(modelItem => item.Raza)</li>
+                <li class="plan-feature">@Html.DisplayNameFor(model => model.Ubicacion): @Html.DisplayFor(modelItem => item.Ubicacion)</li>
+                <li class="plan-feature">@Html.DisplayNameFor(model => model.Sexo): @Html.DisplayFor(modelItem => item.Sexo)</li>
+                <li class="plan-feature" style="word-wrap:break-word">@Html.DisplayNameFor(model => model.Descripcion): @Html.DisplayFor(modelItem => item.Descripcion)</li>
+                <li class="plan-feature">@Html.DisplayNameFor(model => model.Edad): @Html.DisplayFor(modelItem => item.Edad)</li>
+                <li class="plan-feature">@Html.ActionLink("ELIMINAR", "Borrar", new { id = item.Id, rid = item.RID })</li>
+
+
+            </ul>
+        </div>
+
+    }
+</div>
+
+<br /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+

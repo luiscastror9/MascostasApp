@@ -11,6 +11,7 @@ namespace ProyectoMascotas
 {
     using System;
     using System.Collections.Generic;
+    using System.Web;
     
     public partial class Mascotas
     {
@@ -24,5 +25,10 @@ namespace ProyectoMascotas
         public Nullable<int> Edad { get; set; }
         public Nullable<int> Status { get; set; }
         public byte[] Imagen { get; set; }
+        public string ImagenA { get; set; }
+        public Nullable<int> RID { get; set; }
+
+        public HttpPostedFileBase ImagenFile { get; set; }
+
     }
 }

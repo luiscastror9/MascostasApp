@@ -14,6 +14,8 @@
     <Property Name="Edad" Type="int" />
     <Property Name="Status" Type="int" />
     <Property Name="Imagen" Type="varbinary(max)" />
+    <Property Name="ImagenA" Type="nvarchar(max)" />
+    <Property Name="RID" Type="int" />
   </EntityType>
   <EntityType Name="Status">
     <Key>
