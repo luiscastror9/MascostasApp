@@ -10,7 +10,8 @@
     [DNI]                 NVARCHAR (50) NULL,
     [Tipo de usuario]     NCHAR (10)    NULL,
     [Email]               NVARCHAR (50) NULL,
-	[CPass]               NVARCHAR (50) NULL,
+    [CPass]               NVARCHAR (50) NULL,
+    [asd] BIT NULL, 
     PRIMARY KEY CLUSTERED ([ID] ASC)
 );
 

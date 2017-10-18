@@ -8,3 +8,20 @@
     font-family: jazmin;
     color: #00A79D
 }
+
+
+.modal-header, h4, .close {
+    background-color: #00a79d;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-footer {
+    background-color: none;
+}
+
+.textform {
+    width: 293px;
+    height: 105px;
+}

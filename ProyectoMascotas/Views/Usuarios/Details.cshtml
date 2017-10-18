@@ -4,42 +4,48 @@
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="container-fuild body-content">
+    <br />
+    <br />
+    <br />
 
 
-<h2>Details</h2>
+    <h2>Details</h2>
 
-<div>
-    <h4>Usuario</h4>
-    <hr />
+    <div>
+        <h4>Usuario</h4>
+        <hr />
+        
 
-    
-    <dl class="dl-horizontal">
-@if (Model.Tipo_de_usuario.Trim() == "2")
-{
-        <dt>
-            @Html.DisplayNameFor(model => model.Empresa)
-        </dt>   
+        <dl class="dl-horizontal">
+            @if (Model.Tipo_de_usuario.Trim() == "2")
+            {
+                <dt>
+                    @Html.DisplayNameFor(model => model.Empresa)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Empresa)
-        </dd>
-}else{
-            <dt>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Empresa)
+                </dd>
+            }
+            else
+            {
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Nombre)
-            </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Nombre)
+                </dd>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.Apellido)
-            </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Apellido)
+                </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Apellido)
-            </dd>
-    }
+                <dd>
+                    @Html.DisplayFor(model => model.Apellido)
+                </dd>
+            }
             <dt>
                 Nombre de Usuario
             </dt>
@@ -96,14 +102,19 @@
                 @Html.DisplayFor(model => model.Email)
             </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.CPass)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.CPass)
+            </dd>
         </dl>
 
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
 
+
+    <div id="cartelera" class="container-fluid">
+        @Html.Action("CarteleraUsuario", "Home")
+    </div>
+</div>
