@@ -4,14 +4,21 @@
     ViewBag.Title = "Da tu perro en adopcion";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@{
+    var usuario = Session["Username"] as Usuario;
+    var numid = Session["ID"] as Usuario;
+}
+
+
 <div class="container body-content">
 
     <h2>@ViewBag.Title.</h2>
     <h3>@ViewBag.Message</h3>
 
 
-    @using (Html.BeginForm("Create", "Mascotas", FormMethod.Post, new { enctype = "multipart/form-data" }))
-    {
+@using (Html.BeginForm("Daenadopcion", "Home", FormMethod.Post, new { enctype = "multipart/form-data", @id = "demo-form" }))
+{
         @Html.AntiForgeryToken()
 
         <div class="form-horizontal">
@@ -76,20 +83,29 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="display:none">
                 @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control", @Value = 2 } })
                     @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
                 </div>
             </div>
 
-            <div class="form-group">
-                Imagen:
+            <div class="form-group" style="display:none">
+                @Html.LabelFor(model => model.RID, htmlAttributes: new { @class = "control-label col-md-2", })
                 <div class="col-md-10">
-                    <input type="file" id="image1" name="image1" />
+                    @Html.EditorFor(model => model.RID, new { htmlAttributes = new { @class = "form-control", required = "", @Value = (@numid.ID) } })
+                    @Html.ValidationMessageFor(model => model.RID, "", new { @class = "text-danger" })
                 </div>
             </div>
+
+            <div class="form-group">
+                <label for="usrname"><span class="glyphicon"></span> ¡Subí una imagen!</label>
+
+                <input type="file" name="ImagenFile" required="" class="custom-file-input" />
+
+            </div>
+
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">

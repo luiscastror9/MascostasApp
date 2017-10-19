@@ -55,7 +55,7 @@ namespace ProyectoMascotas.Controllers
             {
                 ViewBag.Titulo = "AppMascotas";
                 ViewBag.Message = "ACA VA LA PAGINA PARA ADOPTAR UN PERRO";
-                return View();
+                return View(db.Mascotas.Where(db => db.Status == 2).OrderByDescending(db => db.Id));
             }
             else
             {
@@ -135,23 +135,99 @@ namespace ProyectoMascotas.Controllers
 
             return PartialView(db.Mascotas.Where(db => db.RID == id).OrderByDescending(db => db.Id));
         }
-
-
         public ActionResult Daenadopcion()
         {
-            if (Session["Username"] != null)
+            Mascotas M = new Mascotas();
+            return View(M);
+
+        }
+            
+            [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Daenadopcion(Mascotas mascotas)
+        {
+            //[Bind(Include = "Id,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")]
+            //,  HttpPostedFileBase image1
+
+
+
+
+
+            var db = new mascotasEntities1();
+
+            //string fileName = Path.GetFileNameWithoutExtension(mascotas.ImagenFile.FileName);
+            string fileName = Path.GetFileNameWithoutExtension(mascotas.ImagenFile.FileName);
+            string extension = Path.GetExtension(mascotas.ImagenFile.FileName);
+            fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+            //mascotas.ImagePath = "/Content/Imagenes/" + fileName;
+            mascotas.ImagenA = "/Content/Imagenes/Mascotas/" + fileName;
+            fileName = Path.Combine(Server.MapPath("/Content/Imagenes/Mascotas/"), fileName);
+            mascotas.ImagenFile.SaveAs(fileName);
+
+            //if (image1 != null)
+            //{
+            //    mascotas.Imagen = new byte[image1.ContentLength];
+            //    image1.InputStream.Read(mascotas.Imagen, 0, image1.ContentLength);
+
+            //}
+
+            if (ModelState.IsValid)
             {
-                ViewBag.Titulo = "AppMascotas";
-                ViewBag.Message = "ACA VA LA PAGINA DE DAR EN ADOPCION TU MASCOTA";
-                return View();
+                db.Mascotas.Add(mascotas);
+                db.SaveChanges();
+                ModelState.Clear();
+                return View("Adopta");
             }
             else
             {
-                return RedirectToAction("Validar", "Usuarios");
-            }
 
-            
+                return View();
+            }
         }
+
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Daenadopcion(Mascotas mascotas)
+        //{
+        //    //[Bind(Include = "Id,Animal,Raza,Ubicacion,Sexo,Descripcion,Vacunas,Edad,Status")]
+        //    //,  HttpPostedFileBase image1
+
+
+
+
+
+        //    //var db = new mascotasEntities1();
+
+        //    ////string fileName = Path.GetFileNameWithoutExtension(mascotas.ImagenFile.FileName);
+        //    //string fileName = Path.GetFileNameWithoutExtension(mascotas.ImagenFile.FileName);
+        //    //string extension = Path.GetExtension(mascotas.ImagenFile.FileName);
+        //    //fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+        //    ////mascotas.ImagePath = "/Content/Imagenes/" + fileName;
+        //    //mascotas.ImagenA = "/Content/Imagenes/Mascotas/" + fileName;
+        //    //fileName = Path.Combine(Server.MapPath("/Content/Imagenes/Mascotas/"), fileName);
+        //    //mascotas.ImagenFile.SaveAs(fileName);
+
+        //    ////if (image1 != null)
+        //    ////{
+        //    ////    mascotas.Imagen = new byte[image1.ContentLength];
+        //    ////    image1.InputStream.Read(mascotas.Imagen, 0, image1.ContentLength);
+
+        //    ////}
+
+        //    //if (ModelState.IsValid)
+        //    //{
+        //    //    db.Mascotas.Add(mascotas);
+        //    //    db.SaveChanges();
+        //    //    ModelState.Clear();
+        //    //    return View("Adopta");
+        //    //}
+        //    //else
+        //    //{
+
+        //        return View();
+        //    //}
+        //}
 
 
 
