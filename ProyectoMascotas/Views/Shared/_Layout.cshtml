@@ -33,20 +33,18 @@
                     {
                         <li>
                             <a href="@Url.Action("Details","Usuarios", new { @id=@numid.ID })">
-                                <span class="glyphicon glyphicon-align-justify"></span> @usuario.Nombre_de_Usuario
+                                <span class="glyphicon glyphicon-user"></span> @usuario.Nombre_de_Usuario
                             </a>
                         </li>
                         <li>
-                            @Html.ActionLink("Cerrar Sesion", "LogOut","Home")
+                            @Html.ActionLink(" Salir", "LogOut","Home", new { @class = "glyphicon glyphicon-off" })
                         </li>
 
                     }
                     else
                     {
                         <li>
-                            <a href="@Url.Action("Validar","Usuarios", new {})">
-                                <span class="glyphicon glyphicon-align-justify"></span> Debes iniciar sesion
-                            </a>
+                            @Html.ActionLink(" Iniciar", "Validar", "Usuarios", new { @class = "glyphicon glyphicon-user" })
                         </li>
                     }
 
