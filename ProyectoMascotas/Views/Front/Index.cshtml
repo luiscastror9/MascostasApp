@@ -5,27 +5,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio</title>
+    <title>5rreas-Inicio</title>
     <link href="~/Content/Iniciocss.css" rel="stylesheet" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a class="btn" href="">Adopta Una Mascota</a></li>
-            <li><a class="btn" href="">Cartelera</a></li>
-            <li><a class="btn" href="">Dar En Adopción</a></li>
-            <li><a class="btn" href="">Quienes Somos</a></li>
-            <li style="float:right" class="btn"><a href="@Url.Action("Create","Usuarios", new {})">Registrarse</a></li>
-            <li style="float:right" class="btn"><a href="@Url.Action("Login","Front", new {})">Iniciar</a></li>
-        </ul>
-    </nav>
+    <br />
     <div align="center">
-        <h1>Proyecto Mascotas</h1>
+        <img src="~/Content/Imagenes/Logo/Logo blanco500.png" width="300"/>
+    </div>
+    
+    <div align="center">
         <h2>Un proyecto para buscarle un hogar a las mascotas</h2>
         <br>
         <br>
 
-        @Html.ActionLink("Iniciar Sesion", "Login", "Front", null, new { @class="button" })
+        @Html.ActionLink("Iniciar Sesión", "Login", "Front", null, new { @class="button" })
 
 
         <br>

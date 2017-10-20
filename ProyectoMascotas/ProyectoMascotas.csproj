@@ -213,6 +213,7 @@
     <Content Include="Content\Imagenes\Gato llorando.png" />
     <Content Include="Content\Imagenes\57.jpg" />
     <Content Include="Content\Imagenes\Lentes.png" />
+    <Content Include="Content\Imagenes\Logo\Logo blanco500.png" />
     <Content Include="Content\Imagenes\Perro.png" />
     <Content Include="Content\Iniciocss.css" />
     <Content Include="Content\PaginaCSS.css" />
