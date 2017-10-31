@@ -1,85 +1,27 @@
-﻿@model IEnumerable<ProyectoMascotas.Mascotas>
+﻿@model ProyectoMascotas.Mascotas
+
+@{
+    var usuario = Session["Username"] as Usuario;
+    var numid = Session["ID"] as Usuario;
+}
 
 
 @{
-    ViewBag.Title = "Adopta una mascota";
+    ViewBag.Title = "Cartelera de perros perdidos/Subir tu perro perdido a la cartelera";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="container body-content">
+<link rel="stylesheet" href="~/Content/cartelerastyle.css">
 
-    <h2>@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
-    <p>Asd</p>
-    </div>
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Animal)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Raza)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Ubicacion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sexo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Descripcion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Vacunas)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Edad)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
-        <th></th>
-    </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Animal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Raza)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ubicacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sexo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Vacunas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Edad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
-        </tr>
-    }
+@Html.Action("Cartelerad", "Home")
 
-</table>
+
