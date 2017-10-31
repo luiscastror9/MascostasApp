@@ -4,137 +4,106 @@
 
 
 
-.pricing-table .plan {
-    margin-left: 0px;
+.myImg111 {
     border-radius: 5px;
-    text-align: center;
-    background-color: #f3f3f3;
-    -moz-box-shadow: 0 0 6px 2px #b0b2ab;
-    -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
-    box-shadow: 0 0 6px 2px #b0b2ab;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.plan:hover {
-    background-color: #fff;
-    -moz-box-shadow: 0 0 12px 3px #b0b2ab;
-    -webkit-box-shadow: 0 0 12px 3px #b0b2ab;
-    box-shadow: 0 0 12px 3px #b0b2ab;
-}
-
-.plan {
-    padding: 20px;
-    margin-left: 0px;
-    color: #ff;
-    background-color: #5e5f59;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    /*margin-left:1px;
-    margin-right:1px;*/
-    margin-bottom:5px;
-    height:1000px;
-}
-
-.plan-name-bronze {
-    color: #fff;
-    background-color: #ff;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    max-height: 270px;
-    max-width: 460px;
-    margin-bottom: 5px;
-    overflow: hidden ;
-}
-
-img {
-    margin-top: -50px;
-    width: 460px;
-    height: auto;
-}
-
-.plan-name-silver {
-    padding: 20px;
-    color: #fff;
-    background-color: #C0C0C0;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
-
-.plan-name-gold {
-    padding: 20px;
-    color: #fff;
-    background-color: #FFD700;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
-
-.pricing-table-bronze {
-    padding: 20px;
-    color: #fff;
-    background-color: #f89406;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
-
-.pricing-table .plan .plan-name span {
-    font-size: 20px;
-}
-
-.pricing-table .plan ul {
-    list-style: none;
-    margin: 0;
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-}
-
-    .pricing-table .plan ul li.plan-feature {
-        padding: 15px 10px;
-        border-top: 1px solid #c5c8c0;
-        margin-right: 35px;
+    .myImg111:hover {
+        opacity: 0.7;
     }
 
-.pricing-three-column {
-    margin: 0 auto;
-    width: 90%;
+#img01{
+
+    height:600px;
+    width:auto;
+}
+/* The Modal (background) */
+.modal111 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1031; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-.pricing-variable-height .plan {
-    float: none;
-    margin-left: 2%;
-    vertical-align: bottom;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
+/* Modal Content (image) */
+.modal-content111 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
 }
 
-.plan-mouseover .plan-name {
-    background-color: #4e9a06 !important;
+/* Caption of Modal Image */
+#caption111 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
 }
 
-.btn-plan-select {
-    padding: 8px 25px;
-    font-size: 18px;
+/* Add Animation */
+.modal-content111, #caption111 {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
-@font-face {
-    font-family: "jazmin";
-    src: url(/Content/tipografiacartelera.otf) format("truetype");
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
 
-.fontcartelera {
-    font-family: jazmin;
+    to {
+        transform: scale(1)
+    }
 }
 
-
-.carteleraf {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+/* The Close Button */
+.close111 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
 }
+
+    .close111:hover,
+    .close111:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content111 {
+        width: 100%;
+    }
+}
+

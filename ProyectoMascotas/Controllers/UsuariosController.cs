@@ -102,8 +102,22 @@ namespace ProyectoMascotas.Controllers
 
 
 
-    // GET: Usuarios/Edit/5
-    public ActionResult Edit(int? id)
+        // GET: Usuarios/Edit/5
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Usuario usuario = db.Usuario.Find(id);
+            if (usuario == null)
+            {
+                return HttpNotFound();
+            }
+            return View(usuario);
+        }
+
+        public ActionResult Cambiarpass(int? id)
         {
             if (id == null)
             {
@@ -128,10 +142,25 @@ namespace ProyectoMascotas.Controllers
             {
                 db.Entry(usuario).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Usuarios", new { id = usuario.ID});
             }
             return View(usuario);
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         // GET: Usuarios/Delete/5
         public ActionResult Delete(int? id)
@@ -194,6 +223,43 @@ namespace ProyectoMascotas.Controllers
             }
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Cambiarpass(string Nombre_de_Usuario, string Pass, string CPass, string Pass2)
+        {
+            Usuario us = db.Usuario.FirstOrDefault(d => d.Nombre_de_Usuario == Nombre_de_Usuario);
+
+            if (us.Pass == CPass)
+            {
+                if (Pass == Pass2)
+                {
+
+                
+                us.Pass = Pass;
+                us.CPass = Pass;
+                db.SaveChanges();
+                Session.Abandon();
+                return RedirectToAction("Validar", "Usuarios");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Las nuevas contraseñas no coinciden.");
+                    return View();
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("", "La contraseña no coincide con la actual.");
+                return View();
+
+            }
+
+
+        }
+
+
+
+
         public ActionResult Nohallado()
         {
             ViewBag.Error = "No se encontro ningun usuario";
@@ -201,7 +267,11 @@ namespace ProyectoMascotas.Controllers
         }
 
 
-
+        public ActionResult LogOut()
+        {
+            Session.Abandon();
+            return RedirectToAction("Validar", "Usuarios");
+        }
 
     }
 }

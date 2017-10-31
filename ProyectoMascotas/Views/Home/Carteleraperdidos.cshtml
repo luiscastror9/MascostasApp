@@ -18,101 +18,102 @@
 <br />
 <br />
 <br />
-<div class="container-fluid body-content">
 
-    <div align="center">
 
-    </div>
-    <div class="btn-group btn-group-justified font" style="height:100px;">
-        <a class="btn" data-toggle="modal" data-target="#perdiste" style="background-color: transparent"><img src="/Content/Imagenes/btnperdi.png" /> </a>
-        <a class="btn" data-toggle="modal" data-target="#encontraste" style="background-color: transparent"><img src="/Content/Imagenes/encontrebtn.png" /></a>
+        <div align="center">
 
-    </div>
+        </div>
+        <div class="btn-group btn-group-justified font" style="height:100px;">
+            <a class="btn" data-toggle="modal" data-target="#perdiste" style="background-color: transparent"><img src="/Content/Imagenes/btnperdi.png" /> </a>
+            <a class="btn" data-toggle="modal" data-target="#encontraste" style="background-color: transparent"><img src="/Content/Imagenes/encontrebtn.png" /></a>
+                    </div>
 
-    <br /><br /><br />
+        <br /><br /><br />
 
         <div class="modal fade" id="encontraste" role="dialog" data-dismiss="true">
             <div class="modal-dialog">
 
-                
+
                 <div class="modal-content">
-                    <div class="modal-header" style="background-color: #00a79d;border-color: #00a79d;" >
-                        <button type="button" class="close" data-dismiss="modal" >&times;</button>
+                    <div class="modal-header" style="background-color: #00a79d;border-color: #00a79d;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4><span class=""></span>¡Publicá la mascota que encontraste!</h4>
                     </div>
                     <div class="modal-body" style="padding:40px 50px;">
 
-@using (Html.BeginForm("Carteleraperdidos", "Home", FormMethod.Post, new { enctype = "multipart/form-data", @id = "demo-form" }))
-{                             @Html.AntiForgeryToken()
+                        @using (Html.BeginForm("Carteleraperdidos", "Home", FormMethod.Post, new { enctype = "multipart/form-data", @id = "demo-form" }))
+                        {                             @Html.AntiForgeryToken()
 
 
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
 
-            <div id="quea" class="form-group">
-                <label for="usrname"><span class="glyphicon"></span> ¿Qué animal es?</label>
-                @Html.EditorFor(model => model.Animal, new { htmlAttributes = new { @class = "form-control", required = "", placeholder = "Perro, gato, conejo..." } })
-            </div>
+                            <div id="quea" class="form-group">
+                                <label for="usrname"><span class="glyphicon"></span> ¿Qué animal es?</label>
+                                @Html.EditorFor(model => model.Animal, new { htmlAttributes = new { @class = "form-control", required = "", placeholder = "Perro, gato, conejo..." } })
+                            </div>
 
-            <div class="form-group">
-                <label for="usrname"><span class="glyphicon"></span> ¿Qué raza es?</label>
-                @Html.EditorFor(model => model.Raza, new { htmlAttributes = new { @class = "form-control", required = "", placeholder = "" } })
-            </div>
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon"></span> ¿Qué raza es?</label>
+                                @Html.EditorFor(model => model.Raza, new { htmlAttributes = new { @class = "form-control", required = "", placeholder = "" } })
+                            </div>
 
-            <div class="form-group">
-                <label for="usrname"><span class="glyphicon"></span> ¿Dónde lo encontraste?</label>
-                @Html.EditorFor(model => model.Ubicacion, new { htmlAttributes = new { @class = "form-control", required = "", placeholder = "" } })
-            </div>
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon"></span> ¿Dónde lo encontraste?</label>
+                                @Html.EditorFor(model => model.Ubicacion, new { htmlAttributes = new { @class = "form-control", required = "", placeholder = "" } })
+                            </div>
 
-            <div class="form-group">
-                <label for="usrname"><span class="glyphicon"></span> ¿De qué sexo es?</label>
-                @Html.EditorFor(model => model.Sexo, new { htmlAttributes = new { @class = "form-control", required = "" } })
-            </div>
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon"></span> ¿De qué sexo es?</label>
+                                @*@Html.EditorFor(model => model.Sexo, new { htmlAttributes = new { @class = "form-control", required = "" } })*@
+                                @Html.DropDownListFor(model => model.Sexo, new SelectList(new[] { new { Value = "true", Text = "Hembra" }, new { Value = "false", Text = "Macho" }, }, "Value", "Text", Model), new { @class = "form-control", required = "" })
 
-            <div class="form-group">
-                <label for="usrname"><span class="glyphicon"></span> Escribí una descripción de la mascotas</label>
-                <br />
-                @Html.TextAreaFor(model => model.Descripcion, new { @class = "textform", @required = "", @placeholder = "Manchas, cicatrices, etc...", @maxlength = "199" })
+                            </div>
 
-
-
-
-            </div>
-
-            <div class="form-group">
-                <label for="usrname"><span class="glyphicon"></span> ¿Qué edad tiene?</label>
-                @Html.EditorFor(model => model.Edad, new { htmlAttributes = new { @class = "form-control", required = "", placeholder = "Ingresa la edad", min="0", max="25" } })
-            </div>
-
-            <div class="form-group" style="display:none">
-                @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2", })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control", required = "", @Value = 1 } })
-                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="usrname"><span class="glyphicon"></span> ¡Subí una imagen!</label>
-
-                <input type="file" name="ImagenFile" required="" class="custom-file-input" />
-
-            </div>
-
-            <div class="form-group" style="display:none">
-                @Html.LabelFor(model => model.RID, htmlAttributes: new { @class = "control-label col-md-2", })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.RID, new { htmlAttributes = new { @class = "form-control", required = "", @Value = (@numid.ID) } })
-                    @Html.ValidationMessageFor(model => model.RID, "", new { @class = "text-danger" })
-                </div>
-            </div>
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon"></span> Escribí una descripción de la mascotas</label>
+                                <br />
+                                @Html.TextAreaFor(model => model.Descripcion, new { @class = "textform", @required = "", @placeholder = "Manchas, cicatrices, etc...", @maxlength = "199" })
 
 
 
-            <button  type="submit" class="btn btn-success btn-block" style="background-color: #d8bd4c;border-color: #d8bd4c; "><span class=""></span> Crear publicacion</button>
-        
-        }
-</div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon"></span> ¿Qué edad tiene?</label>
+                                @Html.EditorFor(model => model.Edad, new { htmlAttributes = new { @class = "form-control", required = "", placeholder = "Ingresa la edad", min = "0", max = "25" } })
+                            </div>
+
+                            <div class="form-group" style="display:none">
+                                @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2", })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control", required = "", @Value = 1 } })
+                                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon"></span> ¡Subí una imagen!</label>
+
+                                <input type="file" name="ImagenFile" required="" class="custom-file-input" />
+
+                            </div>
+
+                            <div class="form-group" style="display:none">
+                                @Html.LabelFor(model => model.RID, htmlAttributes: new { @class = "control-label col-md-2", })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.RID, new { htmlAttributes = new { @class = "form-control", required = "", @Value = (@numid.ID) } })
+                                    @Html.ValidationMessageFor(model => model.RID, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+
+                            <button type="submit" class="btn btn-success btn-block" style="background-color: #d8bd4c;border-color: #d8bd4c; "><span class=""></span> Crear publicacion</button>
+
+                        }
+                    </div>
                     <div class="modal-footer">
                         <button onclick="borrardatos()" type="submit" class="btn btn-danger btn-default pull-right" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Cerrar</button>
 
@@ -121,7 +122,6 @@
 
             </div>
         </div>
-    </div>
 
 
         <div class="modal fade" id="perdiste" role="dialog" data-dismiss="true">
@@ -161,8 +161,8 @@
 
                         <div class="form-group">
                             <label for="usrname"><span class="glyphicon"></span> ¿De qué sexo es?</label>
-                            @Html.EditorFor(model => model.Sexo, new { htmlAttributes = new { @class = "form-control", required = "" } })
-
+                            @*@Html.EditorFor(model => model.Sexo, new { htmlAttributes = new { @class = "form-control", required = "" } })*@
+                            @Html.DropDownListFor(model => model.Sexo, new SelectList(new[]  {new { Value = "true", Text = "Hembra" },new { Value = "false", Text = "Macho" },},"Value","Text", Model ), new { @class = "form-control", required = "" })
 
                         </div>
 
@@ -224,9 +224,8 @@
     <div align="center">
         <img src="/Content/Imagenes/cartelera.png" />
     </div>
-    <div id="cartelera" class="container-fluid">
+    
         @Html.Action("Cartelera", "Home")
-    </div>
 
 
 

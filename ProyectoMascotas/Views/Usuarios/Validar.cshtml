@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Inicio de Secion</h2>
+<h2>Inicio de Sesion</h2>
 <h1><br /></h1>
 @using (Html.BeginForm())
 {
@@ -30,7 +30,7 @@
 <div class="row">
     <div id="nombre" class="form-group">
         <div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-3">
-            <label>contraseña:</label>
+            <label>Contraseña:</label>
         </div>
         <div class="col-md-7 col-xs-7">
             @Html.EditorFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control", Type = "password" } })

@@ -53,9 +53,7 @@ namespace ProyectoMascotas.Controllers
         {
             if (Session["Username"] != null)
             {
-                ViewBag.Titulo = "AppMascotas";
-                ViewBag.Message = "ACA VA LA PAGINA PARA ADOPTAR UN PERRO";
-                return View(db.Mascotas.Where(db => db.Status == 2).OrderByDescending(db => db.Id));
+                return View();
             }
             else
             {
@@ -123,7 +121,12 @@ namespace ProyectoMascotas.Controllers
         }
 
 
+        public ActionResult Cartelerad()
+        {
 
+            return PartialView(db.Mascotas.Where(db => db.Status == 2).OrderByDescending(db => db.Id));
+
+        }
 
         public ActionResult Cartelera()
         {
@@ -176,7 +179,7 @@ namespace ProyectoMascotas.Controllers
                 db.Mascotas.Add(mascotas);
                 db.SaveChanges();
                 ModelState.Clear();
-                return View("Adopta");
+                return RedirectToAction("Adopta");
             }
             else
             {
@@ -256,6 +259,22 @@ namespace ProyectoMascotas.Controllers
             db.Mascotas.Remove(mascotas);
             db.SaveChanges();
             return RedirectToAction("Details", "Usuarios", new { id=rid});
+        }
+
+        public ActionResult encontrado(int id, int rid)
+        {
+            Mascotas mascotas = db.Mascotas.Find(id);
+            mascotas.Status = 3;
+            db.SaveChanges();
+            return RedirectToAction("Details", "Usuarios", new { id = rid });
+        }
+
+        public ActionResult adoptado(int id, int rid)
+        {
+            Mascotas mascotas = db.Mascotas.Find(id);
+            mascotas.Status = 4;
+            db.SaveChanges();
+            return RedirectToAction("Details", "Usuarios", new { id = rid });
         }
 
     }
