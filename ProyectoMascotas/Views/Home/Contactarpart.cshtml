@@ -5,9 +5,14 @@
 {
     <h2>@ViewBag.Error</h2>
 }
-<div class="container-fluid">
+<link rel="stylesheet" href="~/Content/cartelerastyle.css">
+
+<div class="container">
     <div class="row">
         <div class="col-md-1"></div>
+        <div class="col-md-4"><div class="font" align="center">
+    <h3>ESCRIBI UN COMENTARIO PARA QUE TE CONTACTEN</h3>
+</div></div>
         <form class="col-md-5" method="post" action="Form">
 
 
@@ -15,10 +20,16 @@
 
             <input style="display:none" class="form-control" type="text" name="asunto" value="5Correas - Quieren comunicarse con vos!" />
 
-            <input class="form-control" type="text" name="mensaje" />
+            @*<text class="form-control" type="text" name="mensaje" />*@
+            <textarea class="form-control texttt" rows="5" id="comment" name="mensaje"></textarea>
 
 
-            <button type="submit">Enviar</button>
+            <br />
+            <br />
+            <div align="center">
+                <button type="submit" class="btn btn-success btn-block" style="background-color: #d8bd4c;border-color: #d8bd4c; ">ENVIAR</button>
+
+            </div>
             <br />
             <br />
             <br />
