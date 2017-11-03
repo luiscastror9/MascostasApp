@@ -1,0 +1,33 @@
+﻿@font-face {
+    font-family: "jazmin";
+    src: url(/Content/tipografiacartelera.otf) format("truetype");
+}
+
+
+.font {
+    font-family: jazmin;
+}
+
+
+.modal-header, h4, .close {
+    background-color: #00a79d;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-footer {
+    background-color: none;
+}
+
+.textform {
+    width: 293px;
+    height: 105px;
+}
+
+.descp {
+    background-color: white;
+    text-align: left;
+    font-size: 24px;
+    color: black;
+}

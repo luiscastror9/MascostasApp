@@ -1,0 +1,28 @@
+﻿@model ProyectoMascotas.Usuario
+
+
+@if(ViewBag.Error!= null)
+{
+    <h2>@ViewBag.Error</h2>
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <form class="col-md-5" method="post" action="Form">
+
+
+            <input style="display:none" class="form-control" type="text" name="recibeEmail" value="@Model.Email" />
+
+            <input style="display:none" class="form-control" type="text" name="asunto" value="5Correas - Quieren comunicarse con vos!" />
+
+            <input class="form-control" type="text" name="mensaje" />
+
+
+            <button type="submit">Enviar</button>
+            <br />
+            <br />
+            <br />
+            <br />
+        </form>
+    </div>
+</div>

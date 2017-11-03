@@ -1,0 +1,95 @@
+﻿@model ProyectoMascotas.Mascotas
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/cartelerastyle.css">
+
+<link rel="stylesheet" href="~/Content/carteleramascotas.css">
+
+@{
+    int zxc = 0;
+}
+<br />
+<br />
+<br />
+<br />
+@Html.Action("Contactarpart", "Home", new { rid=Model.RID })
+
+
+
+
+<div class="container font">
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+            <div align="center">
+                @{zxc += 1; }
+                <img id="@zxc" class="myImg111" src="@Url.Content(Model.ImagenA)" width="300" /><br /><br />
+            </div>
+            @*<h2>@Html.DisplayFor(modelItem => item.Animal)</h2>
+                <span>@Html.DisplayFor(modelItem => item.Raza)</span>*@
+        </div>
+        <div class="col-md-5 ">
+            <ul style="list-style-type:none">
+                <li> <h4 class="descp"> @Html.DisplayNameFor(model => model.Animal): @Html.DisplayFor(modelItem => Model.Animal)</h4></li>
+                <li><h4 class="descp"> @Html.DisplayNameFor(model => model.Raza): @Html.DisplayFor(modelItem => Model.Raza)</h4></li>
+                <li><h4 class="descp"> @Html.DisplayNameFor(model => model.Ubicacion): @Html.DisplayFor(modelItem => Model.Ubicacion)</h4></li>
+
+                @if (Model.Sexo == true)
+                {
+
+                    <li>      <h4 class="descp">                         Sexo: Hembra    </h4>           </li>
+                }
+                else
+                {
+                    <li>                  <h4 class="descp">              Sexo: Macho </h4></li>   }
+                <li style="word-wrap:break-word"><h4 class="descp">@Html.DisplayNameFor(model => model.Descripcion): @Html.DisplayFor(modelItem => Model.Descripcion)</h4></li>
+                <li><h4 class="descp">@Html.DisplayNameFor(model => model.Edad): @Html.DisplayFor(modelItem => Model.Edad) </h4></li>
+
+
+            </ul>
+
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div id="myModal111" class="modal111">
+        <span class="close111">&times;</span>
+        <img class="modal-content111" id="img01">
+        <div id="caption111"></div>
+    </div>
+
+</div>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal111');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('@zxc');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption111");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close111")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>

@@ -105,7 +105,7 @@
 
     </div>
     <p>
-        @Html.ActionLink("Editar Usuario", "Edit", new { id = Model.ID }) |
+        @*@Html.ActionLink("Editar Usuario", "Edit", new { id = Model.ID }) *@
         @Html.ActionLink("Cambiar Contraseña", "Cambiarpass", new { id = Model.ID })
     </p>
 
@@ -113,4 +113,3 @@
     <div id="cartelera" class="container-fluid">
         @Html.Action("CarteleraUsuario", "Home")
     </div>
-</div>

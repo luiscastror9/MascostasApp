@@ -17,7 +17,7 @@
                     <div align="center">
                         @{zxc += 1; }
                         <img id="@zxc" class="myImg111" src="@Url.Content(item.ImagenA)" width="300" /><br /><br />
-                        <a href="#" class="btn btn-primary btn-plan-select" style="background-color:#00A79D"><i class="icon-white icon-ok"></i>CONTACTAR</a>
+                        <a href="@Url.Action("Contactar","Home", new { id = item.Id, rid=item.RID})" class="btn btn-primary btn-plan-select" style="background-color:#00A79D"><i class="icon-white icon-ok"></i>CONTACTAR</a>
                     </div>
                     @*<h2>@Html.DisplayFor(modelItem => item.Animal)</h2>
                         <span>@Html.DisplayFor(modelItem => item.Raza)</span>*@

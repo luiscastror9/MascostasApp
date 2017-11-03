@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>@ViewBag.Message</h3>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="~/Content/PaginaCSS.css">
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xs-12">
+                <a class="list-group-item" href="@Url.Action("Adopta","Home", new {})">
+                    <img src="/Content/Imagenes/Perro.png" /><h3 class="text-center">Adopta una mascota</h3>
+                    <p class="text-center">Busca y adopta a una mascota</p>
+                </a>
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <a class="list-group-item" href="@Url.Action("Carteleraperdidos","Home", new {})">
+                    <img src="/Content/Imagenes/Aviso.png" /><h3 class="text-center">Cartelera</h3>
+                    <p class="text-center">¿Se perdio una de tus mascotas? Crea un aviso para avisarle a la comunidad</p>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xs-12">
+                <a class="list-group-item" href="@Url.Action("Daenadopcion","Home", new {})">
+                    <img src="/Content/Imagenes/Gato%20llorando.png" />
+                    <h3 class="text-center">Dar en adopcion</h3>
+                    <p class="text-center">Da en adopcion a tu mascota</p>
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 col-xs-12">
+                <a class="list-group-item" href="@Url.Action("Quiensomos","Home", new {})">
+                    <img src="/Content/Imagenes/Lentes.png" /><h3 class="text-center">Quienes somos</h3>
+                    <p class="text-center">Conoce mas sobre el proyecto y los desarrolladores</p>
+                </a>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>

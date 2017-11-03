@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ffe57e4818304c4bb397aaaa3fa6f0ed" Name="Diagram1">
+        <EntityTypeShape EntityType="mascotasModel.Status" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="mascotasModel.Usuario" Width="3.875" PointX="5.875" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="mascotasModel.Mascotas" Width="1.5" PointX="1.25" PointY="0.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
