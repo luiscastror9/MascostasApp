@@ -92,10 +92,10 @@ namespace ProyectoMascotas.Controllers
             {
                 db.Usuario.Add(usuario);
                 db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+                    return RedirectToAction("Index", "Home");
+                }
 
-            return View(usuario);
+                return View(usuario);
         }
 
     }

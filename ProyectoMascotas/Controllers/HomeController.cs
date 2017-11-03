@@ -8,8 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using ProyectoMascotas;
 using System.IO;
-
-
+using System.Net.Mail;
 
 namespace ProyectoMascotas.Controllers
 
@@ -34,6 +33,77 @@ namespace ProyectoMascotas.Controllers
             ViewBag.Message = "Your application description page.";
 
             return View();
+        }
+
+
+        public ActionResult Contactar(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Mascotas mascotas = db.Mascotas.Find(id);
+            if (mascotas == null)
+            {
+                return HttpNotFound();
+            }
+            return View(mascotas);
+        }
+
+        public ActionResult Contactarpart(int rid)
+        {
+            Usuario m = db.Usuario.FirstOrDefault(d => d.ID == rid);
+
+            return PartialView(m);
+
+        }
+
+        [HttpPost]
+        public ActionResult Contactar(string recibeEmail, string asunto, string mensaje)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var enviaMail = new MailAddress("app5rreas@gmail.com", "5rreas");
+                    var recibeMail = new MailAddress(recibeEmail,"Recibe");
+
+                    var password = "appmascotas";
+                    var asu = asunto;
+                    var cuerpo = mensaje;
+
+                    var smtp = new SmtpClient
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        EnableSsl = true,
+                        DeliveryMethod = SmtpDeliveryMethod.Network,
+                        UseDefaultCredentials = false,
+                    Credentials=new NetworkCredential(enviaMail.Address, password)
+                    
+
+                    };
+
+                    using (var men = new MailMessage(enviaMail, recibeMail)
+                    {
+                        Subject = asu,
+                        Body = cuerpo
+
+                    })
+                    {
+                        smtp.Send(men);
+                    }
+
+                    return RedirectToAction("Index", "Home");
+
+                }
+            }
+            catch (Exception)
+            {
+                ViewBag.Error = "No se envio el mail";
+            }
+            return View();
+
         }
 
         public ActionResult Contact()

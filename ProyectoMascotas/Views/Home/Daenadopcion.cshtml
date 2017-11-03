@@ -13,8 +13,7 @@
 
 <div class="container body-content">
 
-    <h2>@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+
 
 
 @using (Html.BeginForm("Daenadopcion", "Home", FormMethod.Post, new { enctype = "multipart/form-data", @id = "demo-form" }))
@@ -22,8 +21,10 @@
         @Html.AntiForgeryToken()
 
         <div class="form-horizontal">
-            <h4>Mascotas</h4>
-            <hr />
+            <br />
+            <br />
+            <br />
+            <br />
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
                 @Html.LabelFor(model => model.Animal, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -50,21 +51,19 @@
             </div>
 
             <div class="form-group">
-                @Html.LabelFor(model => model.Sexo, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    <div class="checkbox">
-                        @Html.EditorFor(model => model.Sexo)
-                        @Html.ValidationMessageFor(model => model.Sexo, "", new { @class = "text-danger" })
-                    </div>
-                </div>
+                <label class="control-label col-md-2" for="usrname"><span class="glyphicon"></span> ¿De qué sexo es?</label>
+                @*@Html.EditorFor(model => model.Sexo, new { htmlAttributes = new { @class = "form-control", required = "" } })*@
+                <div class="col-md-10"> @Html.DropDownListFor(model => model.Sexo, new SelectList(new[] { new { Value = "true", Text = "Hembra" }, new { Value = "false", Text = "Macho" }, }, "Value", "Text", Model), new { @class = "form-control", required = "" })</div>
+
             </div>
 
             <div class="form-group">
-                @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
+                <label class="control-label col-md-2" for="usrname"><span class="glyphicon"></span> Escribí una descripción de tu mascota</label>
+                <br />
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                    @Html.TextAreaFor(model => model.Descripcion, new { @class = "textform", @required = "", @placeholder = "Manchas, cicatrices, etc...", @maxlength = "199" })
                 </div>
+
             </div>
 
             <div class="form-group">
@@ -100,9 +99,9 @@
             </div>
 
             <div class="form-group">
-                <label for="usrname"><span class="glyphicon"></span> ¡Subí una imagen!</label>
+                <label class = "control-label col-md-2" for="usrname"><span class="glyphicon"></span> ¡Subí una imagen!</label>
 
-                <input type="file" name="ImagenFile" required="" class="custom-file-input" />
+                <input class="col-md-10 custom-file-input" type="file" name="ImagenFile" required="" />
 
             </div>
 

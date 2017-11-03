@@ -237,6 +237,7 @@
       <DependentUpon>ModelMascotas.edmx</DependentUpon>
     </Content>
     <Content Include="Content\tipografiacartelera.otf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ModelMascotas.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -300,6 +301,8 @@
     <Content Include="Views\Home\CarteleraUsuario.cshtml" />
     <Content Include="Views\Home\Cartelerad.cshtml" />
     <Content Include="Views\Usuarios\Cambiarpass.cshtml" />
+    <Content Include="Views\Home\Contactar.cshtml" />
+    <Content Include="Views\Home\Contactarpart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -1,0 +1,81 @@
+﻿@model ProyectoMascotas.Usuario
+
+@{
+    var usuario = Session["Username"] as Usuario;
+    var numid = Session["ID"] as Usuario;
+}
+
+@{
+    ViewBag.Title = "Validar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Cambiar password</h2>
+<h1><br /></h1>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <form>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="container">
+            <div class="row">
+                <div id="nombre" class="form-group">
+
+                    <div class="col-md-7 col-xs-7" style="display:none">
+                        @Html.EditorFor(model => model.Nombre_de_Usuario, new { htmlAttributes = new { @class = "form-control", @Value = (usuario.Nombre_de_Usuario) } })
+                        @Html.ValidationMessageFor(model => model.Nombre_de_Usuario, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-3">
+                        <label>Ingrese la contraseña actual:</label>
+                    </div>
+                    <div class="col-md-7 col-xs-7">
+                        @Html.EditorFor(model => model.CPass, new { htmlAttributes = new { @class = "form-control", Type = "password" } })
+                        @Html.ValidationMessageFor(model => model.CPass, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div id="nombre" class="form-group">
+                    <div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-3">
+                        <label>Nueva contraseña:</label>
+                    </div>
+                    <div class="col-md-7 col-xs-7">
+                        @Html.EditorFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control", Type = "password" } })
+                        @Html.ValidationMessageFor(model => model.Pass, "", new { @class = "text-danger" })
+                    </div>
+
+                </div>
+
+            </div>
+            <br />
+
+            <div class="row">
+                <div id="nombre" class="form-group">
+                    <div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-3">
+                        <label>Repeti la nueva contraseña:</label>
+                    </div>
+                    <div class="col-md-7 col-xs-7">
+                        <input class="form-control text-box single-line" id="Pass2" name="Pass2" value="cambiar" type="password">
+                    </div>
+
+                </div>
+
+            </div>
+            <br />
+            <div class="row">
+
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-3"></div>
+                    <div class="col-md-7 col-xs-7">
+                        <input type="submit" value="Cambiar" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+}
+<br /><br />

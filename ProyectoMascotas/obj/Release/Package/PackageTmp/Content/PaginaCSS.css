@@ -1,0 +1,27 @@
+#1 {
+        background-color: darkblue;
+    height: 306px;
+}
+img {
+       width: 30%;
+    display: block;
+    margin: auto;
+}
+
+a.btn{
+    font-size: 17px;
+    color: #FFF;
+}
+
+
+a.btn:hover{
+        color: #000;
+}
+    
+.img-responsive {
+    margin: 0 auto;
+}
+
+body{
+	background-color: #FFF;
+}
